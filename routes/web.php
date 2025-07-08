@@ -9,18 +9,10 @@ Route::get('/login', function () {
 
 
 Route::get('/', [PageController::class, 'index'])->name('home');
+Route::get('/product-services', [PageController::class, 'productService'])->name('product.service');
 Route::get('/about', [PageController::class, 'about'])->name('about');
-Route::get('/blog', [PageController::class, 'blog'])->name('blog');
-Route::get('/individual-blog/{slug}', [PageController::class, 'individualBlog'])->name('individual.blog');
-Route::get('/privacy-policy', [PageController::class, 'privacy'])->name('privacy');
-Route::get('/terms-conditions', [PageController::class, 'terms'])->name('terms');
-Route::get('/seo-malaysia', [PageController::class, 'seo'])->name('seo');
-Route::get('/web-design-development', [PageController::class, 'web'])->name('web');
-Route::get('/career', [PageController::class, 'career'])->name('career');
+Route::get('/contact', [PageController::class, 'index'])->name('home');
 
-Route::get('/contact', [PageController::class, 'contact'])->name('contact');
-Route::post('/contact/submit', [PageController::class, 'submitContact'])->name('submit.contact');
-Route::post('/newsletter/submit', [PageController::class, 'submitNewsletter'])->name('submit.newsletter');
 
 
 Route::get('/foo', function () {

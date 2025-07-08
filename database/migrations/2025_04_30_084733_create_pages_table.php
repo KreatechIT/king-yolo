@@ -19,7 +19,7 @@ return new class extends Migration
             $table->longText('payload');
             $table->timestamps();
 
-            $table->unique(['group', 'name'], 'settings_group_name_unique');
+            // $table->unique(['group', 'name'], 'settings_group_name_unique');
 
         });
     }
