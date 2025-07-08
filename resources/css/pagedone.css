@@ -1,0 +1,82 @@
+.testimonial-swiper-button-prev:after,
+.swiper-rtl .testimonial-swiper-button-next:after {
+    content: '' !important;
+}
+
+.testimonial-swiper-button-next:after,
+.swiper-rtl .testimonial-swiper-button-prev:after {
+    content: '' !important;
+}
+
+.testimonial-swiper-button-next svg,
+.testimonial-swiper-button-prev svg {
+    width: auto !important;
+    height: auto !important;
+}
+
+.testimonial-swiper-button-next,
+.testimonial-swiper-button-prev {
+    position: relative !important;
+    width: 40px !important;
+    height: 40px !important;
+    margin: 0 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+
+.services-swiper-button-prev:after,
+    .swiper-rtl .services-swiper-button-next:after {
+        content: '' !important;
+    }
+
+    .services-swiper-button-next:after,
+    .swiper-rtl .services-swiper-button-prev:after {
+        content: '' !important;
+    }
+
+    .services-swiper-button-next svg,
+    .services-swiper-button-prev svg {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .services-swiper-button-next,
+    .services-swiper-button-prev {
+        position: relative !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }
+
+
+    .promotion-swiper-button-prev:after,
+    .swiper-rtl .promotion-swiper-button-next:after {
+        content: '' !important;
+    }
+
+    .promotion-swiper-button-next:after,
+    .swiper-rtl .promotion-swiper-button-prev:after {
+        content: '' !important;
+    }
+
+    .promotion-swiper-button-next svg,
+    .promotion-swiper-button-prev svg {
+        width: auto !important;
+        height: auto !important;
+    }
+
+    .promotion-swiper-button-next,
+    .promotion-swiper-button-prev {
+        position: relative !important;
+        width: 40px !important;
+        height: 40px !important;
+        margin: 0 !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+    }

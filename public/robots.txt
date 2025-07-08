@@ -1,0 +1,13 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /login/
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+Disallow: /scripts/
+
+# Allow everything else
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.blackrevo.com/sitemap.xml

@@ -1,0 +1,262 @@
+.hero-gradient {
+    background: linear-gradient(135deg,
+            rgba(49, 2, 2, 0.95) 0%,
+            rgba(0, 0, 0, 0.95) 30%,
+            rgba(0, 0, 0, 0.95) 80%,
+            rgba(49, 2, 2, 0.95) 100%);
+}
+
+.article-gradient {
+    background: linear-gradient(90deg,
+            rgba(49, 2, 2, 0.95) 0%,
+            rgba(0, 0, 0, 0.95) 10%,
+            rgba(0, 0, 0, 0.95) 90%,
+            rgba(49, 2, 2, 0.95) 100%);
+}
+
+.service-gradient {
+    background: linear-gradient(135deg,
+            rgba(0, 0, 0, 0.95) 0%,
+            rgba(49, 2, 2, 0.95) 40%,
+            rgba(49, 2, 2, 0.95) 70%,
+            rgba(0, 0, 0, 0.95) 100%);
+}
+
+.faq-gradient {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95),
+            rgba(49, 2, 2, 0.95));
+}
+
+.red-black-gradient {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95),
+            rgba(49, 2, 2, 0.95));
+}
+
+.black-red-gradient {
+    background: linear-gradient(to top,
+            rgba(0, 0, 0, 0.95),
+            rgba(49, 2, 2, 0.95));
+}
+
+.footer-gradient {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95) 20%,
+            rgba(49, 2, 2, 0.95) 100%);
+}
+
+.seo-gradiant {
+    background: linear-gradient(to bottom,
+            rgba(0, 0, 0, 0.95) 20%,
+            rgba(17, 17, 17, 0.95) 100%);
+}
+
+/* navbar css */
+.nav-link {
+    position: relative;
+}
+
+.nav-link-custom {
+    position: relative;
+}
+
+.nav-link:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 2px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link-custom:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    display: block;
+    margin-top: 20px;
+    right: 0;
+    background: #fff;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+.nav-link-custom:hover:after {
+    margin-top: 20px;
+    width: 100%;
+    left: 0;
+    background: #fff;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.8);
+    min-width: 160px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    padding: 0.5rem 0;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 100%;
+    margin-top: 0.5rem;
+}
+
+.dropdown:after {
+    content: "";
+    display: block;
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    bottom: -20px;
+    left: 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 0.5rem 1rem;
+    display: block;
+    color: white;
+    transition: background-color 0.3s;
+    white-space: nowrap;
+}
+
+.dropdown-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.side-menu {
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer css */
+.footer-container {
+    color: white;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.footer-content {
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.info-item i {
+    margin-right: 10px;
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+}
+
+.social-links a {
+    color: white;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #cccccc;
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .social-links {
+        margin-top: 15px;
+    }
+
+    .info-item {
+        justify-content: center;
+    }
+}
+
+/* Ticker styles */
+.ticker-headline {
+    padding-top: 35px;
+    padding-bottom: 35px;
+    margin-top: -95px;
+    background-color: #000;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.ticker-headline-2 {
+    background-color: #000;
+    border-top: 1px solid #333;
+    border-bottom: 1px solid #333;
+}
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-content {
+    display: flex;
+    white-space: nowrap;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-marquee {
+    animation: marquee 20s linear infinite;
+}
+
+/* Card Design */
+.card-gradient {
+    background: conic-gradient(from 181.06deg at 50% 50%,
+            rgba(194, 1, 1, 0.4) 0deg,
+            rgba(0, 0, 0, 0) 172.66deg,
+            rgba(194, 1, 1, 0.6) 281.25deg,
+            rgba(194, 1, 1, 0.4) 360deg),
+        rgba(255, 255, 255, 0.1);
+}
+
+.card-value {
+    color: #c20101;
+}
