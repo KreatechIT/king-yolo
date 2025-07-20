@@ -1,2 +1,3 @@
 import "./bootstrap";
-import "./main.js";
+import "./script.js";
+import "./review-carousel.js";

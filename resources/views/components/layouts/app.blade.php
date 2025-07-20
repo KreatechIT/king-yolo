@@ -5,10 +5,11 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Meta Data -->
     @stack('meta')
 
     <!-- Favicon -->
-    <link rel="icon" href="{{ asset('assets/images/favicon-white.png') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/king-yolo.png') }}" type="image/x-icon">
 
     <!-- Font Awesome CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
@@ -20,10 +21,11 @@
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
+    <!-- Schema Data -->
     @stack('schema')
-    
-    @stack('styles')
 
+    <!-- Styles -->
+    @stack('styles')
 
 </head>
 
@@ -46,9 +48,15 @@
     <!-- AOS Scripts -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 1000,
+            easing: "ease-in-out",
+            once: true,
+            mirror: false,
+        });
     </script>
 
+    <!-- Scripts -->
     @stack('scripts')
 
 </body>

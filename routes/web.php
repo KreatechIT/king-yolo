@@ -9,6 +9,7 @@ Route::get('/login', function () {
 })->name('login');
 
 Route::get('/', HomeLivewire::class)->name('home');
+Route::get('/contact', ContactLivewire::class)->name('contact');
 
 
 Route::get('/foo', function () {
