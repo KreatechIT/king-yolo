@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    @yield('meta')
+    @stack('meta')
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/images/favicon-white.png') }}" type="image/x-icon">
@@ -15,35 +15,41 @@
         integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- AOS CDN -->
-    {{-- <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" /> --}}
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <!-- Styles / Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
-    @yield('styles')
+    @stack('schema')
+    
+    @stack('styles')
 
-    @yield('schema')
 
 </head>
 
 <body>
 
-    <!-- Navigation Bar -->
-    @include('frontend.layouts.navbar')
+    <!-- Header Section -->
+    <x-layouts.header />
 
-    <!-- Main Content -->
-    @yield('content')
+    @if ($slot->isEmpty())
+        <p>
+            Empty $slot
+        </p>
+    @else
+        {{ $slot }}
+    @endif
 
-    <!-- Footer -->
-    @include('frontend.layouts.footer')
+    <!-- Footer Section -->
+    <x-layouts.footer />
 
-    <!-- Scripts -->
-    {{-- <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- AOS Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init();
-    </script> --}}
+    </script>
 
-    @yield('scripts')
+    @stack('scripts')
 
 </body>
 
