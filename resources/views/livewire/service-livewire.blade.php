@@ -94,7 +94,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Automation
                         </button>
-                        <a href="kingbot.html" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
+                        <a href="{{route('kingbot')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
                             Details</a>
                     </div>
                 </div>
@@ -226,7 +226,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Integration
                         </button>
-                        <a href="kingpay.html" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
+                        <a href="{{route('kingpay')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
                             Details</a>
                     </div>
                 </div>
@@ -375,7 +375,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Campaign
                         </button>
-                        <a href="kingmedia.html" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
+                        <a href="{{route('kingmedia')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
                             View Details
                         </a>
                     </div>

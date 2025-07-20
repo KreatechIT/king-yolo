@@ -4,7 +4,7 @@
             <!-- Company Info -->
             <div>
                 <div class="flex items-center space-x-4 max-w-60">
-                    <a href="index.html"><img src="{{ asset('assets/king-yolo-footer-logo.png') }}" alt="KingYolo logo"
+                    <a href="{{route('home')}}"><img src="{{ asset('assets/king-yolo-footer-logo.png') }}" alt="KingYolo logo"
                             class="max-w-60" /></a>
                 </div>
                 <p class="text-gray-400 mb-4 mt-2 pr-8">
@@ -44,15 +44,15 @@
                 <h4 class="font-inter font-bold mb-4">Our Services</h4>
                 <ul class="space-y-2 text-gray-400">
                     <li>
-                        <a href="kingbot.html" class="hover:text-[#d4af37] hover:underline transition-colors">KingBot -
+                        <a href="{{route('kingbot')}}" class="hover:text-[#d4af37] hover:underline transition-colors">KingBot -
                             Banking Automation</a>
                     </li>
                     <li>
-                        <a href="kingpay.html" class="hover:text-[#d4af37] hover:underline transition-colors">KingPay -
+                        <a href="{{route('kingpay')}}" class="hover:text-[#d4af37] hover:underline transition-colors">KingPay -
                             Payment Solutions</a>
                     </li>
                     <li>
-                        <a href="kingmedia.html"
+                        <a href="{{route('kingmedia')}}"
                             class="hover:text-[#d4af37] hover:underline transition-colors">KingMedia - Digital
                             Marketing</a>
                     </li>
@@ -64,13 +64,13 @@
                 <h4 class="font-inter font-bold mb-4">Quick Links</h4>
                 <ul class="space-y-2 text-gray-400">
                     <li>
-                        <a href="index.html" class="hover:text-[#d4af37] hover:underline transition-colors">Home</a>
+                        <a href="{{route('home')}}" class="hover:text-[#d4af37] hover:underline transition-colors">Home</a>
                     </li>
                     <li>
-                        <a href="about.html" class="hover:text-[#d4af37] hover:underline transition-colors">About Us</a>
+                        <a href="{{route('about')}}" class="hover:text-[#d4af37] hover:underline transition-colors">About Us</a>
                     </li>
                     <li>
-                        <a href="contact.html"
+                        <a href="{{route('contact')}}"
                             class="hover:text-[#d4af37] hover:underline transition-colors">Contact</a>
                     </li>
                 </ul>

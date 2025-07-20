@@ -112,7 +112,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Campaign
                         </button>
-                        <a href="kingmedia.html" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
+                        <a href="{{route('kingmedia')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
                             View Details
                         </a>
                     </div>
@@ -747,7 +747,7 @@
                         <button class="premium-btn px-8 py-4 rounded-lg font-semibold text-lg">
                             Book a Demo
                         </button>
-                        <a href="contact.html"
+                        <a href="{{route('contact')}}"
                             class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300">
                             Contact Us
                         </a>

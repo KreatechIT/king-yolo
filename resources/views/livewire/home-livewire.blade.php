@@ -162,7 +162,7 @@
                         class="premium-btn px-8 sm:px-10 py-2 rounded-lg font-semibold hover:opacity-90 transform hover:scale-105">
                         Book a Demo
                     </button>
-                    <a href="services.html"
+                    <a href="{{route('service')}}"
                         class="premium-outline-btn px-8 sm:px-10 py-2 rounded-lg font-medium flex items-center justify-center">
                         Explore Services
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
@@ -218,7 +218,7 @@
                         <div class="text-sm text-background-dark/80">Support</div>
                     </div>
                 </div>
-                <a href="about.html"
+                <a href="{{route('about')}}"
                     class="inline-flex items-center text-background-dark font-semibold hover:opacity-80 transition-opacity">
                     Learn More About Us
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -340,7 +340,7 @@
                             Advanced security protocols
                         </li>
                     </ul>
-                    <a href="kingbot.html"
+                    <a href="{{route('kingbot')}}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -383,7 +383,7 @@
                             Advanced fraud protection
                         </li>
                     </ul>
-                    <a href="kingpay.html"
+                    <a href="{{route('kingpay')}}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -425,7 +425,7 @@
                             Content creation & strategy
                         </li>
                     </ul>
-                    <a href="kingmedia.html"
+                    <a href="{{route('kingmedia')}}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
