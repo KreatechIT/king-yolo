@@ -3,15 +3,33 @@
 namespace App\Livewire;
 
 use App\Models\CompanyTimeline;
+use App\Models\Pages;
 use Livewire\Component;
 
 class AboutLivewire extends Component
 {
 
     public $timelines;
+    public $counts = [];
+    public $mission;
+    public $vission;
 
-    public function mount(){
+
+    public function mount()
+    {
         $this->timelines = CompanyTimeline::all();
+
+        $pageContent = Pages::where('group', 'about-page')->get();
+
+        // Get mission and vision
+        $this->mission = $pageContent->firstWhere('name', 'our-mission')?->payload;
+        $this->vission = $pageContent->firstWhere('name', 'our-vision')?->payload;
+
+        // Filter out mission and vision to build counts array
+        $this->counts = $pageContent
+            ->filter(fn($item) => !in_array($item->name, ['our-mission', 'our-vision']))
+            ->mapWithKeys(fn($item) => [$item->name => $item->payload])
+            ->toArray();
     }
 
     public function render()

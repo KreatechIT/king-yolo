@@ -16,16 +16,40 @@ class PagesSeeder extends Seeder
     {
         $data = [
             [
-                'group' => 'pages',
-                'name' => 'privacy-policy',
+                'group' => 'about-page',
+                'name' => 'our-mission',
                 'payload_type' => 'text',
-                'payload' => 'Upload Content',
+                'payload' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
             ],
             [
-                'group' => 'pages',
-                'name' => 'terms-conditions',
+                'group' => 'about-page',
+                'name' => 'our-vision',
                 'payload_type' => 'text',
-                'payload' => 'Upload Content',
+                'payload' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Happy Clients',
+                'payload_type' => 'text',
+                'payload' => '500+',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Countries Served',
+                'payload_type' => 'text',
+                'payload' => '50+',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Uptime Guarantee',
+                'payload_type' => 'text',
+                'payload' => '99.9%',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Support Available',
+                'payload_type' => 'text',
+                'payload' => '24/7',
             ],
            
         ];

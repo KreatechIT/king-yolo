@@ -24,28 +24,14 @@
                 <!-- Stats Section -->
                 <div class="hero-stats rounded-2xl p-8 mb-16" data-aos="fade-up" data-aos-delay="300">
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary-gold mb-2">
-                                500+
+                        @foreach ($counts as $title => $value)
+                            <div class="text-center">
+                                <div class="text-4xl font-bold text-primary-gold mb-2">
+                                    {{ $value }}
+                                </div>
+                                <div class="text-gray-300">{{ $title }}</div>
                             </div>
-                            <div class="text-gray-300">Happy Clients</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary-gold mb-2">50+</div>
-                            <div class="text-gray-300">Countries Served</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary-gold mb-2">
-                                99.9%
-                            </div>
-                            <div class="text-gray-300">Uptime Guarantee</div>
-                        </div>
-                        <div class="text-center">
-                            <div class="text-4xl font-bold text-primary-gold mb-2">
-                                24/7
-                            </div>
-                            <div class="text-gray-300">Support Available</div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
             </div>
@@ -73,8 +59,7 @@
                             Our Mission
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                           {{$mission}}
                         </p>
                     </div>
 
@@ -88,8 +73,7 @@
                             Our Vision
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                            Excepteur sint occaecat cupidatat non proident, sunt in culpa
-                            qui officia deserunt mollit anim id est laborum.
+                           {{$vission}}
                         </p>
                     </div>
                 </div>
