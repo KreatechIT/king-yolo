@@ -121,127 +121,39 @@
 
                     <!-- Timeline Items -->
                     <div class="space-y-16 md:space-y-24">
-                        <!-- Year Block Template -->
-                        <div class="relative flex flex-col md:flex-row items-center md:items-start">
-                            <!-- Left Content -->
-                            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        Company Founded
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2020</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        Nulla facilisi. Vestibulum ante ipsum primis in faucibus.
-                                    </p>
+                        @if ($timelines)
+                            @foreach ($timelines as $key => $item)
+                                @php
+                                    $isEven = $key % 2 === 0;
+                                    $contentAlignment = $isEven ? 'md:flex-row' : 'md:flex-row-reverse';
+                                    $textAlignment = $isEven ? 'md:text-right md:pr-8' : 'md:text-left md:pl-8';
+                                    $animation = $isEven ? 'fade-right' : 'fade-left';
+                                    $spacingDiv = $isEven ? 'md:pl-8' : 'md:pr-8';
+                                @endphp
+
+                                <div class="relative flex flex-col {{ $contentAlignment }} items-center md:items-start">
+                                    <!-- Timeline Content -->
+                                    <div class="w-full md:w-1/2 text-center {{ $textAlignment }}"
+                                        data-aos="{{ $animation }}">
+                                        <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
+                                            <h3 class="text-2xl font-bold text-white mb-2">{{ $item->title }}</h3>
+                                            <p class="text-primary-gold font-semibold mb-3">{{ $item->year }}</p>
+                                            <p class="text-gray-300 text-sm sm:text-base">{{ $item->description }}</p>
+                                        </div>
+                                    </div>
+
+                                    <!-- Timeline Dot -->
+                                    <div
+                                        class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
+                                    </div>
+
+                                    <!-- Empty Spacing (for layout alignment) -->
+                                    <div class="hidden md:block w-1/2 {{ $spacingDiv }}"></div>
                                 </div>
-                            </div>
-
-                            <!-- Dot -->
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-
-                            <!-- Right Space -->
-                            <div class="hidden md:block w-1/2 md:pl-8"></div>
-                        </div>
-
-                        <!-- Year Block -->
-                        <div class="relative flex flex-col md:flex-row-reverse items-center md:items-start">
-                            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left" data-aos="fade-left">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        KingBot Launch
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2021</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Sed ut perspiciatis unde omnis iste natus error sit
-                                        voluptatem accusantium doloremque laudantium.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-                            <div class="hidden md:block w-1/2 md:pr-8"></div>
-                        </div>
-
-                        <div class="relative flex flex-col md:flex-row items-center md:items-start">
-                            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        KingPay Integration
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2022</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Duis aute irure dolor in reprehenderit in voluptate velit
-                                        esse cillum dolore eu fugiat nulla pariatur.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-                            <div class="hidden md:block w-1/2 md:pl-8"></div>
-                        </div>
-
-                        <div class="relative flex flex-col md:flex-row-reverse items-center md:items-start">
-                            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left" data-aos="fade-left">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        KingMedia Expansion
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2023</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur
-                                        aut odit aut fugit, sed quia consequuntur magni dolores.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-                            <div class="hidden md:block w-1/2 md:pr-8"></div>
-                        </div>
-
-                        <div class="relative flex flex-col md:flex-row items-center md:items-start">
-                            <div class="w-full md:w-1/2 md:pr-8 text-center md:text-right" data-aos="fade-right">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        Global Expansion
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2024</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Quis autem vel eum iure reprehenderit qui in ea voluptate
-                                        velit esse quam nihil molestiae consequatur.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-                            <div class="hidden md:block w-1/2 md:pl-8"></div>
-                        </div>
-
-                        <div class="relative flex flex-col md:flex-row-reverse items-center md:items-start">
-                            <div class="w-full md:w-1/2 md:pl-8 text-center md:text-left" data-aos="fade-left">
-                                <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                    <h3 class="text-2xl font-bold text-white mb-2">
-                                        AI Innovation Hub
-                                    </h3>
-                                    <p class="text-primary-gold font-semibold mb-3">2025</p>
-                                    <p class="text-gray-300 text-sm sm:text-base">
-                                        Temporibus autem quibusdam et aut officiis debitis aut
-                                        rerum necessitatibus saepe eveniet ut et voluptates.
-                                    </p>
-                                </div>
-                            </div>
-                            <div
-                                class="timeline-dot w-6 h-6 rounded-full bg-primary-gold border-2 border-white absolute md:relative left-1/2 md:left-auto transform -translate-x-1/2 md:translate-x-0 z-10 -mt-3 md:mt-0">
-                            </div>
-                            <div class="hidden md:block w-1/2 md:pr-8"></div>
-                        </div>
+                            @endforeach
+                        @endif
                     </div>
+
                 </div>
             </div>
         </section>
