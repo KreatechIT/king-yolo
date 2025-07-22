@@ -51,7 +51,43 @@ class PagesSeeder extends Seeder
                 'payload_type' => 'text',
                 'payload' => '24/7',
             ],
-           
+            [
+                'group' => 'about-page',
+                'name' => 'Innovation',
+                'payload_type' => 'text',
+                'payload' => 'Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Excellence',
+                'payload_type' => 'text',
+                'payload' => 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Integrity',
+                'payload_type' => 'text',
+                'payload' => 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Collaboration',
+                'payload_type' => 'text',
+                'payload' => 'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Security',
+                'payload_type' => 'text',
+                'payload' => 'Excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt.',
+            ],
+            [
+                'group' => 'about-page',
+                'name' => 'Customer Focus',
+                'payload_type' => 'text',
+                'payload' => 'Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis.',
+            ]
+
         ];
 
 

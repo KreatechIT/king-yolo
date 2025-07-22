@@ -59,7 +59,7 @@
                             Our Mission
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                           {{$mission}}
+                            {{ $mission }}
                         </p>
                     </div>
 
@@ -73,7 +73,7 @@
                             Our Vision
                         </h3>
                         <p class="text-gray-300 leading-relaxed">
-                           {{$vission}}
+                            {{ $vission }}
                         </p>
                     </div>
                 </div>
@@ -159,98 +159,34 @@
                         deliver.
                     </p>
                 </div>
+               
+                @php
+                    $colorMap = [
+                        'Innovation' => 'from-blue-500 to-purple-600',
+                        'Excellence' => 'from-primary-gold to-yellow-600',
+                        'Integrity' => 'from-green-500 to-emerald-600',
+                        'Collaboration' => 'from-orange-500 to-red-600',
+                        'Security' => 'from-purple-500 to-pink-600',
+                        'Customer Focus' => 'from-teal-500 to-cyan-600',
+                    ];
+                @endphp
 
                 <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Innovation -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="100">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                            <!-- ... same SVG ... -->
+                    @foreach ($values as $index => $value)
+                        <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up"
+                            data-aos-delay="{{ 100 + $index * 100 }}">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br {{ $colorMap[$value->name] ?? 'from-gray-600 to-gray-800' }} rounded-xl flex items-center justify-center mb-6 mx-auto">
+                                <!-- Optional: Add an icon here -->
+                            </div>
+                            <h3 class="font-inter text-2xl font-bold text-white mb-4">
+                                {{ $value->name }}
+                            </h3>
+                            <p class="text-gray-300">
+                                {{ $value->payload }}
+                            </p>
                         </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Innovation
-                        </h3>
-                        <p class="text-gray-300">
-                            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
-                        </p>
-                    </div>
-
-                    <!-- Excellence -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="200">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-primary-gold to-yellow-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                        </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Excellence
-                        </h3>
-                        <p class="text-gray-300">
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse
-                            cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                    </div>
-
-                    <!-- Integrity -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="300">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                        </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Integrity
-                        </h3>
-                        <p class="text-gray-300">
-                            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                            accusantium doloremque laudantium.
-                        </p>
-                    </div>
-
-                    <!-- Collaboration -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="400">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                        </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Collaboration
-                        </h3>
-                        <p class="text-gray-300">
-                            At vero eos et accusamus et iusto odio dignissimos ducimus qui
-                            blanditiis praesentium.
-                        </p>
-                    </div>
-
-                    <!-- Security -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="500">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                        </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Security
-                        </h3>
-                        <p class="text-gray-300">
-                            Excepturi sint occaecati cupiditate non provident, similique
-                            sunt in culpa qui officia deserunt.
-                        </p>
-                    </div>
-
-                    <!-- Customer Focus -->
-                    <div class="value-card rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="600">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
-                            <!-- Icon SVG -->
-                        </div>
-                        <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                            Customer Focus
-                        </h3>
-                        <p class="text-gray-300">
-                            Et harum quidem rerum facilis est et expedita distinctio. Nam
-                            libero tempore, cum soluta nobis.
-                        </p>
-                    </div>
+                    @endforeach
                 </div>
             </div>
         </section>
