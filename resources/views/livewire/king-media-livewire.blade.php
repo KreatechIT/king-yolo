@@ -400,174 +400,41 @@
             <div class="relative overflow-hidden">
                 <div id="kingmedia-carousel" class="flex transition-transform duration-700 ease-in-out"
                     style="transform: translateX(0%)">
-                    <!-- Review 1 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="200"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Our organic traffic increased by 250% in just 4 months with
-                                KingMedia's SEO strategy. Their team's expertise in search
-                                optimization is unmatched - we're now ranking #1 for our key
-                                terms."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    MJ
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Maria Johnson</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Marketing Manager, TechStart
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Review 2 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="300"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The video content they created went viral across all our
-                                social platforms. Engagement rates jumped 400% and we gained
-                                50K new followers in 2 months. Their creative team is
-                                exceptional."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    DL
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Daniel Lee</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Brand Director, StyleForward
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @if ($feedbacks && $feedbacks->count())
+                        @foreach ($feedbacks as $item)
+                            <div class="w-full md:w-1/3 px-4 shrink-0">
+                                <div class="glass-effect p-8 rounded-xl h-full">
+                                    <div class="flex items-center mb-4">
+                                        {{-- Star rating based on value --}}
+                                        <div class="star-rating text-xl text-primary-gold">
+                                            {!! str_repeat('★', $item->rating) !!}{!! str_repeat('☆', 5 - $item->rating) !!}
+                                        </div>
+                                        <span
+                                            class="ml-2 text-primary-gold font-semibold">{{ number_format($item->rating, 1) }}</span>
+                                    </div>
 
-                    <!-- Review 3 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="400"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Their social media management transformed our brand presence.
-                                Community engagement is at an all-time high and our brand
-                                mentions have increased 300%. They truly understand modern
-                                marketing."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    SW
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Sophie Williams</h4>
-                                    <p class="text-sm text-gray-400">CEO, FreshBrand Co</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Review 4 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="500"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "ROI from our digital campaigns has been incredible. Lead
-                                generation increased by 180% and cost per acquisition dropped
-                                by 40%. They deliver measurable results consistently."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    CT
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Chris Taylor</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Growth Director, ScaleUp Ventures
+                                    <p class="text-gray-300 mb-6 italic">
+                                        "{{ $item->message }}"
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- New Review 5 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="600"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingMedia’s content marketing boosted our lead quality
-                                significantly. We've seen a 230% increase in qualified leads
-                                within 5 months."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    ER
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Ethan Roberts</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Marketing Director, LeadBoost
-                                    </p>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
+                                            {{ strtoupper(substr($item->name, 0, 1)) }}{{ strtoupper(Str::afterLast($item->name, ' ')[0] ?? '') }}
+                                        </div>
+                                        <div class="ml-4">
+                                            <h4 class="font-semibold text-white">{{ $item->name }}</h4>
+                                            <p class="text-sm text-gray-400">
+                                                {{ $item->designation }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <!-- New Review 6 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full" data-aos="fade-up" data-aos-delay="700"
-                            data-aos-duration="800">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The email campaigns designed by KingMedia increased our open
-                                rates by 150% and conversions by 75%. Their attention to
-                                detail is remarkable."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    AL
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Alicia Lee</h4>
-                                    <p class="text-sm text-gray-400">
-                                        CRM Manager, MarketPulse
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
+                    
                 </div>
 
                 <!-- Controls -->
@@ -602,124 +469,31 @@
             </div>
 
             <div class="space-y-4">
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Lorem ipsum dolor sit amet?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at
-                                fermentum elit. Vestibulum ante ipsum primis in faucibus orci
-                                luctus et ultrices posuere cubilia curae.
-                            </p>
+                 @if ($faqs)
+                    @foreach ($faqs as $item)
+                        <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100"
+                            data-aos-duration="800">
+                            <details class="group">
+                                <summary
+                                    class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
+                                    <h3 class="font-inter text-xl font-semibold text-white">
+                                        {{ $item->question }}
+                                    </h3>
+                                    <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-300">
+                                    <p>
+                                        {{ $item->answer }}
+                                    </p>
+                                </div>
+                            </details>
                         </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Consectetur adipiscing elit sed do?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Nullam quis risus eget urna mollis ornare vel eu leo.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="300"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Eiusmod tempor incididunt ut labore?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Aenean
-                                lacinia bibendum nulla sed consectetur.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="400"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Ut enim ad minim veniam?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Curabitur blandit tempus porttitor. Integer posuere erat a
-                                ante venenatis dapibus posuere velit aliquet. Etiam porta sem
-                                malesuada magna mollis euismod.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="500"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Duis aute irure dolor in reprehenderit?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Duis mollis, est non commodo luctus, nisi erat porttitor
-                                ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta
-                                ac consectetur ac, vestibulum at eros.
-                            </p>
-                        </div>
-                    </details>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>

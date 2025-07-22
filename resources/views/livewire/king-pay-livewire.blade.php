@@ -147,162 +147,40 @@
             <div class="relative overflow-hidden">
                 <div id="kingpay-carousel" class="flex transition-transform duration-700 ease-in-out"
                     style="transform: translateX(0%)">
-                    <!-- Each review card -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingPay's multi-currency support helped us expand globally.
-                                Processing payments in 150+ currencies with instant conversion
-                                rates has been a game-changer for our international business."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    AS
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Alex Smith</h4>
-                                    <p class="text-sm text-gray-400">CFO, GlobalTrade Inc</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                   
+                      @if ($feedbacks && $feedbacks->count())
+                        @foreach ($feedbacks as $item)
+                            <div class="w-full md:w-1/3 px-4 shrink-0">
+                                <div class="glass-effect p-8 rounded-xl h-full">
+                                    <div class="flex items-center mb-4">
+                                        {{-- Star rating based on value --}}
+                                        <div class="star-rating text-xl text-primary-gold">
+                                            {!! str_repeat('★', $item->rating) !!}{!! str_repeat('☆', 5 - $item->rating) !!}
+                                        </div>
+                                        <span
+                                            class="ml-2 text-primary-gold font-semibold">{{ number_format($item->rating, 1) }}</span>
+                                    </div>
 
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The fraud protection is outstanding. We've seen a 95%
-                                reduction in fraudulent transactions since implementing
-                                KingPay. The real-time monitoring gives us complete peace of
-                                mind."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    TC
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Taylor Chen</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Security Director, SecureCommerce
+                                    <p class="text-gray-300 mb-6 italic">
+                                        "{{ $item->message }}"
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Integration was seamless with our existing e-commerce
-                                platform. The analytics dashboard provides incredible insights
-                                into our payment patterns and customer behavior."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    RB
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Rachel Brown</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Tech Lead, ShopEasy Solutions
-                                    </p>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600  rounded-full flex items-center justify-center text-white font-bold">
+                                            {{ strtoupper(substr($item->name, 0, 1)) }}{{ strtoupper(Str::afterLast($item->name, ' ')[0] ?? '') }}
+                                        </div>
+                                        <div class="ml-4">
+                                            <h4 class="font-semibold text-white">{{ $item->name }}</h4>
+                                            <p class="text-sm text-gray-400">
+                                                {{ $item->designation }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Transaction speeds are incredible - instant processing has
-                                improved our customer satisfaction dramatically. The uptime
-                                reliability is 99.9% which is crucial for our business."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    KP
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Kevin Park</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Operations Manager, FastPay Systems
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- New Review 5 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingPay’s seamless API allowed us to launch new payment
-                                features within weeks instead of months, delighting our
-                                customers."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    MH
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Maya Harris</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Product Manager, PayFast
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- New Review 6 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Our dispute resolution time dropped by 70% thanks to
-                                KingPay’s automated workflows and intelligent routing."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    JD
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Jason Doe</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Customer Service Lead, QuickPay
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
                 </div>
 
                 <!-- Controls -->

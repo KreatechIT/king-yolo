@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\KingBotFeedbackResource\Pages;
-use App\Filament\Resources\KingBotFeedbackResource\RelationManagers;
+use App\Filament\Resources\KingMediaFeedbackResource\Pages;
+use App\Filament\Resources\KingMediaFeedbackResource\RelationManagers;
 use App\Models\Feedback;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 
 
-class KingBotFeedbackResource extends Resource
+class KingMediaFeedbackResource extends Resource
 {
     protected static ?string $model = Feedback::class;
 
@@ -23,20 +23,20 @@ class KingBotFeedbackResource extends Resource
 
     protected static ?string $navigationGroup = 'Feedbacks';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 2;
 
-    protected static ?string $label = 'KingBot';
+    protected static ?string $label = 'KingMedia';
 
-    protected static ?string $pluralLabel = 'KingBot';
+    protected static ?string $pluralLabel = 'KingMedia';
 
     public static function getEloquentQuery(): Builder
     {
-        return parent::getEloquentQuery()->where('category', 'kingbot');
+        return parent::getEloquentQuery()->where('category', 'kingmedia');
     }
 
     public static function form(Form $form): Form
     {
-        return $form
+       return $form
             ->schema([
                 Forms\Components\Card::make([
                     Forms\Components\TextInput::make('name')
@@ -64,7 +64,7 @@ class KingBotFeedbackResource extends Resource
                         ->label('Rating'),
 
                     Forms\Components\Hidden::make('category')
-                        ->default('kingbot'),
+                        ->default('kingmedia'),
                 ])->columns(1)->columnSpanFull()
             ]);
     }
@@ -88,7 +88,7 @@ class KingBotFeedbackResource extends Resource
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ])->defaultSort('id', 'asc');
+              ])->defaultSort('id', 'asc');
     }
 
     public static function getRelations(): array
@@ -101,9 +101,9 @@ class KingBotFeedbackResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListKingBotFeedback::route('/'),
-            'create' => Pages\CreateKingBotFeedback::route('/create'),
-            'edit' => Pages\EditKingBotFeedback::route('/{record}/edit'),
+            'index' => Pages\ListKingMediaFeedback::route('/'),
+            'create' => Pages\CreateKingMediaFeedback::route('/create'),
+            'edit' => Pages\EditKingMediaFeedback::route('/{record}/edit'),
         ];
     }
 }

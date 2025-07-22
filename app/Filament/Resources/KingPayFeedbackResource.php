@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\KingBotFeedbackResource\Pages;
-use App\Filament\Resources\KingBotFeedbackResource\RelationManagers;
+use App\Filament\Resources\KingPayFeedbackResource\Pages;
+use App\Filament\Resources\KingPayFeedbackResource\RelationManagers;
 use App\Models\Feedback;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 
 
-class KingBotFeedbackResource extends Resource
+class KingPayFeedbackResource extends Resource
 {
     protected static ?string $model = Feedback::class;
 
@@ -23,15 +23,15 @@ class KingBotFeedbackResource extends Resource
 
     protected static ?string $navigationGroup = 'Feedbacks';
 
-    protected static ?int $navigationSort = 1;
+    protected static ?int $navigationSort = 3;
 
-    protected static ?string $label = 'KingBot';
+    protected static ?string $label = 'KingPay';
 
-    protected static ?string $pluralLabel = 'KingBot';
+    protected static ?string $pluralLabel = 'KingPay';
 
     public static function getEloquentQuery(): Builder
     {
-        return parent::getEloquentQuery()->where('category', 'kingbot');
+        return parent::getEloquentQuery()->where('category', 'kingpay');
     }
 
     public static function form(Form $form): Form
@@ -64,7 +64,7 @@ class KingBotFeedbackResource extends Resource
                         ->label('Rating'),
 
                     Forms\Components\Hidden::make('category')
-                        ->default('kingbot'),
+                        ->default('kingpay'),
                 ])->columns(1)->columnSpanFull()
             ]);
     }
@@ -101,9 +101,9 @@ class KingBotFeedbackResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListKingBotFeedback::route('/'),
-            'create' => Pages\CreateKingBotFeedback::route('/create'),
-            'edit' => Pages\EditKingBotFeedback::route('/{record}/edit'),
+            'index' => Pages\ListKingPayFeedback::route('/'),
+            'create' => Pages\CreateKingPayFeedback::route('/create'),
+            'edit' => Pages\EditKingPayFeedback::route('/{record}/edit'),
         ];
     }
 }

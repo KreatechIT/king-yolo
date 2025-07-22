@@ -13,7 +13,8 @@ class FeedbackSeeder extends Seeder
      */
     public function run(): void
     {
-         $data = [
+        $data = [
+            // KINGBOT FEEDBACK
             [
                 "name" => "James Mitchell",
                 "designation" => "Head of Operations, Metropolitan Bank",
@@ -30,7 +31,7 @@ class FeedbackSeeder extends Seeder
             ],
             [
                 "name" => "Marcus Garcia",
-                "designation" => "Marcus Garcia Branch Manager, Community Credit Union",
+                "designation" => "Branch Manager, Community Credit Union",
                 "category" => "kingbot",
                 "rating" => 5,
                 "message" => "Implementation was smooth and the training was comprehensive. Our staff adapted quickly and now they can focus on high-value customer relationships instead of routine tasks."
@@ -55,6 +56,66 @@ class FeedbackSeeder extends Seeder
                 "category" => "kingbot",
                 "rating" => 5,
                 "message" => "The seamless integration with our legacy systems saved us months of development time. KingBot truly understands banking needs."
+            ],
+
+            // KINGMEDIA FEEDBACK
+            [
+                "name" => "Samuel Davis",
+                "designation" => "Senior Analyst, Capital Trust",
+                "category" => "kingmedia",
+                "rating" => 1,
+                "message" => "The seamless integration with our legacy systems saved us months of development time. KingBot truly understands banking needs."
+            ],
+            [
+                "name" => "Jessica Lin",
+                "designation" => "Marketing Director, MediaCorp",
+                "category" => "kingmedia",
+                "rating" => 5,
+                "message" => "KingMedia has transformed our content delivery process. Engagement rates have doubled since implementation, and campaign management is now effortless."
+            ],
+            [
+                "name" => "Carlos Sanchez",
+                "designation" => "CEO, DigitalWave",
+                "category" => "kingmedia",
+                "rating" => 4,
+                "message" => "We now have full control over our media pipelines. KingMedia’s analytics features provide insights that help us optimize our advertising strategy."
+            ],
+            [
+                "name" => "Carlos Sanchez AX",
+                "designation" => "CEO, DigitalWave",
+                "category" => "kingmedia",
+                "rating" => 5,
+                "message" => "We now have full control over our media pipelines. KingMedia’s analytics features provide insights that help us optimize our advertising strategy."
+            ],
+
+            // KINGPAY FEEDBACK
+            [
+                "name" => "Samuel Davis",
+                "designation" => "Senior Analyst, Capital Trust",
+                "category" => "kingpay",
+                "rating" => 1,
+                "message" => "The seamless integration with our legacy systems saved us months of development time. KingBot truly understands banking needs."
+            ],
+            [
+                "name" => "Sophia Reynolds",
+                "designation" => "Finance Director, PayFast Ltd",
+                "category" => "kingpay",
+                "rating" => 5,
+                "message" => "KingPay has drastically reduced our transaction fees. The platform is user-friendly and settlements are processed instantly."
+            ],
+            [
+                "name" => "Liam Patel",
+                "designation" => "Operations Manager, Swift Payments",
+                "category" => "kingpay",
+                "rating" => 4,
+                "message" => "We switched to KingPay for its multi-currency support. Our international customers now enjoy a seamless payment experience."
+            ],
+            [
+                "name" => "Liam Patel A",
+                "designation" => "Operations Manager, Swift Payments",
+                "category" => "kingpay",
+                "rating" => 5,
+                "message" => "We switched to KingPay for its multi-currency support. Our international customers now enjoy a seamless payment experience."
             ],
         ];
 
