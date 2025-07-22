@@ -150,165 +150,41 @@
             <div class="relative overflow-hidden">
                 <div id="kingbot-carousel" class="flex transition-transform duration-700 ease-in-out"
                     style="transform: translateX(0%)">
-                    <!-- Each review card -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingBot reduced our transaction processing time by 85%. The
-                                AI-powered automation handles complex banking operations
-                                flawlessly. Our customers are amazed by the instant service."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    JM
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">James Mitchell</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Head of Operations, Metropolitan Bank
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The compliance features are exceptional. KingBot
-                                automatically handles all regulatory requirements while
-                                maintaining the highest security standards. It's a
-                                game-changer for our industry."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    EP
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Elena Petrov</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Compliance Officer, SecureBank Ltd
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @if ($feedbacks && $feedbacks->count())
+                        @foreach ($feedbacks as $item)
+                            <div class="w-full md:w-1/3 px-4 shrink-0">
+                                <div class="glass-effect p-8 rounded-xl h-full">
+                                    <div class="flex items-center mb-4">
+                                        {{-- Star rating based on value --}}
+                                        <div class="star-rating text-xl text-primary-gold">
+                                            {!! str_repeat('★', $item->rating) !!}{!! str_repeat('☆', 5 - $item->rating) !!}
+                                        </div>
+                                        <span
+                                            class="ml-2 text-primary-gold font-semibold">{{ number_format($item->rating, 1) }}</span>
+                                    </div>
 
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "Implementation was smooth and the training was comprehensive.
-                                Our staff adapted quickly and now they can focus on high-value
-                                customer relationships instead of routine tasks."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    MG
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Marcus Garcia</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Branch Manager, Community Credit Union
+                                    <p class="text-gray-300 mb-6 italic">
+                                        "{{ $item->message }}"
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The 24/7 operation capability is incredible. Our customers
-                                can complete complex transactions anytime, and the system
-                                never sleeps. Customer satisfaction has increased by 60%."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    NL
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Nina Liu</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Customer Experience Director, Global Finance
-                                    </p>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                                            {{ strtoupper(substr($item->name, 0, 1)) }}{{ strtoupper(Str::afterLast($item->name, ' ')[0] ?? '') }}
+                                        </div>
+                                        <div class="ml-4">
+                                            <h4 class="font-semibold text-white">{{ $item->name }}</h4>
+                                            <p class="text-sm text-gray-400">
+                                                {{ $item->designation }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
 
-                    <!-- New Review 5 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingBot’s intuitive dashboard lets us monitor all processes
-                                in real-time. It has boosted our team’s efficiency
-                                tremendously."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    RH
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Rachel Huang</h4>
-                                    <p class="text-sm text-gray-400">
-                                        IT Manager, Horizon Bank
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- New Review 6 -->
-                    <div class="w-full md:w-1/3 px-4 shrink-0">
-                        <div class="glass-effect p-8 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="star-rating text-xl">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The seamless integration with our legacy systems saved us
-                                months of development time. KingBot truly understands banking
-                                needs."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    SD
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Samuel Davis</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Senior Analyst, Capital Trust
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
 
                 <!-- Controls -->
@@ -343,124 +219,32 @@
             </div>
 
             <div class="space-y-4">
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Lorem ipsum dolor sit amet?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. In at
-                                fermentum elit. Vestibulum ante ipsum primis in faucibus orci
-                                luctus et ultrices posuere cubilia curae.
-                            </p>
-                        </div>
-                    </details>
-                </div>
 
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="200"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Consectetur adipiscing elit sed do?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Sed do eiusmod tempor incididunt ut labore et dolore magna
-                                aliqua. Nullam quis risus eget urna mollis ornare vel eu leo.
-                            </p>
+                @if ($faqs)
+                    @foreach ($faqs as $item)
+                        <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100"
+                            data-aos-duration="800">
+                            <details class="group">
+                                <summary
+                                    class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
+                                    <h3 class="font-inter text-xl font-semibold text-white">
+                                        {{ $item->question }}
+                                    </h3>
+                                    <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
+                                        fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M19 9l-7 7-7-7"></path>
+                                    </svg>
+                                </summary>
+                                <div class="px-6 pb-6 text-gray-300">
+                                    <p>
+                                        {{ $item->answer }}
+                                    </p>
+                                </div>
+                            </details>
                         </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="300"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Eiusmod tempor incididunt ut labore?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                                laboris nisi ut aliquip ex ea commodo consequat. Aenean
-                                lacinia bibendum nulla sed consectetur.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="400"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Ut enim ad minim veniam?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Curabitur blandit tempus porttitor. Integer posuere erat a
-                                ante venenatis dapibus posuere velit aliquet. Etiam porta sem
-                                malesuada magna mollis euismod.
-                            </p>
-                        </div>
-                    </details>
-                </div>
-
-                <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="500"
-                    data-aos-duration="800">
-                    <details class="group">
-                        <summary
-                            class="flex items-center justify-between p-6 cursor-pointer hover:bg-white/5 transition-all duration-300">
-                            <h3 class="font-inter text-xl font-semibold text-white">
-                                Duis aute irure dolor in reprehenderit?
-                            </h3>
-                            <svg class="w-6 h-6 text-primary-gold transform group-open:rotate-180 transition-transform duration-300"
-                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 9l-7 7-7-7"></path>
-                            </svg>
-                        </summary>
-                        <div class="px-6 pb-6 text-gray-300">
-                            <p>
-                                Duis mollis, est non commodo luctus, nisi erat porttitor
-                                ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta
-                                ac consectetur ac, vestibulum at eros.
-                            </p>
-                        </div>
-                    </details>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </div>
@@ -488,7 +272,7 @@
                         <button class="premium-btn px-8 py-4 rounded-lg font-semibold text-lg">
                             Book a Demo
                         </button>
-                        <a href="{{route('contact')}}"
+                        <a href="{{ route('contact') }}"
                             class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300">
                             Contact Us
                         </a>

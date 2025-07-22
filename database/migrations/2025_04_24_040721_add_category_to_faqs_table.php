@@ -12,7 +12,7 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('faqs', function (Blueprint $table) {
-            $table->string('category')->default('general')->comment('general,seo')->after('answer');
+            $table->string('category')->default('general')->comment('general,kingbot,kingmedia,kingpay')->after('answer');
         });
     }
 

@@ -2,8 +2,8 @@
 
 namespace App\Filament\Resources;
 
-use App\Filament\Resources\FaqResource\Pages;
-use App\Filament\Resources\FaqResource\RelationManagers;
+use App\Filament\Resources\KingBotFAQResource\Pages;
+use App\Filament\Resources\KingBotFAQResource\RelationManagers;
 use App\Models\Faq;
 use Filament\Forms;
 use Filament\Forms\Form;
@@ -14,28 +14,29 @@ use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Tables\Columns\TextColumn;
 
-class FaqResource extends Resource
+class KingBotFAQResource extends Resource
 {
     protected static ?string $model = Faq::class;
 
     protected static ?string $navigationIcon = 'heroicon-o-question-mark-circle';
 
-    protected static ?string $navigationGroup = 'HOME';
+    protected static ?string $navigationGroup = 'FAQs';
 
     protected static ?int $navigationSort = 1;
 
-    protected static ?string $label = 'FAQ';
+    protected static ?string $label = 'KingBot';
 
-    protected static ?string $pluralLabel = 'FAQs';
+    protected static ?string $pluralLabel = 'KingBot';
 
     public static function getEloquentQuery(): Builder
     {
-        return parent::getEloquentQuery()->where('category', 'general');
+        return parent::getEloquentQuery()->where('category', 'kingbot');
     }
+
 
     public static function form(Form $form): Form
     {
-        return $form
+       return $form
             ->schema([
                 Forms\Components\Card::make([
                     Forms\Components\Textarea::make('question')
@@ -47,9 +48,11 @@ class FaqResource extends Resource
                     Forms\Components\TextInput::make('sorting')
                         ->required()
                         ->numeric(),
+                    Forms\Components\Hidden::make('category')
+                        ->default('kingbot'),
                 ])
-                ->columns(1) // Optional: display inputs in two columns
-                ->columnSpanFull() // Make the card take full width
+                ->columns(1) 
+                ->columnSpanFull() 
             ]);
     }
 
@@ -58,7 +61,7 @@ class FaqResource extends Resource
         return $table
             ->columns([
                 TextColumn::make('question')->sortable()->searchable(),
-                TextColumn::make('sorting'),
+                TextColumn::make('sorting')->sortable(),
                 TextColumn::make('created_at')->dateTime('M d, Y')->sortable(),
             ])
             ->filters([
@@ -66,14 +69,12 @@ class FaqResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
-                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
                     Tables\Actions\DeleteBulkAction::make(),
                 ]),
-            ])
-            ->defaultSort('sorting', 'asc');
+            ])->defaultSort('sorting', 'asc');
     }
 
     public static function getRelations(): array
@@ -86,9 +87,9 @@ class FaqResource extends Resource
     public static function getPages(): array
     {
         return [
-            'index' => Pages\ListFaqs::route('/'),
-            'create' => Pages\CreateFaq::route('/create'),
-            'edit' => Pages\EditFaq::route('/{record}/edit'),
+            'index' => Pages\ListKingBotFAQS::route('/'),
+            'create' => Pages\CreateKingBotFAQ::route('/create'),
+            'edit' => Pages\EditKingBotFAQ::route('/{record}/edit'),
         ];
     }
 }
