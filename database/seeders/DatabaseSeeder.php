@@ -18,7 +18,8 @@ class DatabaseSeeder extends Seeder
             UserSeeder::class,
             PagesSeeder::class,
             FAQSeeder::class,
-            FeedbackSeeder::class
+            FeedbackSeeder::class,
+            SiteSettingsSeeder::class
         ]);
     }
 }

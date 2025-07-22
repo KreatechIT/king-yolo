@@ -458,162 +458,39 @@
                     style="transform: translateX(0%)">
                     <!-- Cards with your actual reviews -->
 
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 1 - KingBot -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingBot transformed our banking operations completely. What
-                                used to take hours now happens in minutes. The automation is
-                                flawless and the security features give us complete peace of
-                                mind."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    MS
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Michael Chen</h4>
-                                    <p class="text-sm text-gray-400">CTO, FinanceFirst Bank</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                      @if ($feedbacks && $feedbacks->count())
+                        @foreach ($feedbacks as $item)
+                            <div class="w-full md:w-1/3 px-4 shrink-0">
+                                <div class="glass-effect p-8 rounded-xl h-full">
+                                    <div class="flex items-center mb-4">
+                                        {{-- Star rating based on value --}}
+                                        <div class="star-rating text-xl text-primary-gold">
+                                            {!! str_repeat('★', $item->rating) !!}{!! str_repeat('☆', 5 - $item->rating) !!}
+                                        </div>
+                                        <span
+                                            class="ml-2 text-primary-gold font-semibold">{{ number_format($item->rating, 1) }}</span>
+                                    </div>
 
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 2 - KingPay -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingPay's payment processing is incredibly fast and secure.
-                                Our customers love the seamless experience, and we've seen a
-                                40% increase in successful transactions since implementation."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    AR
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Amanda Rodriguez</h4>
-                                    <p class="text-sm text-gray-400">CEO, ShopTech Solutions</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 3 - KingMedia -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingMedia's digital marketing expertise is unmatched. Our
-                                brand visibility increased by 300% in just 3 months. Their
-                                team truly understands modern marketing."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-orange-500 to-red-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    DJ
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">David Johnson</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Marketing Director, BrandForward
+                                    <p class="text-gray-300 mb-6 italic">
+                                        "{{ $item->message }}"
                                     </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 4 - Mixed Services -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "We use both KingBot and KingPay for our fintech startup. The
-                                integration was seamless and the support team is incredibly
-                                responsive. Highly recommended!"
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-purple-500 to-pink-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    SK
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Sarah Kim</h4>
-                                    <p class="text-sm text-gray-400">
-                                        Founder, NextGen Fintech
-                                    </p>
+                                    <div class="flex items-center">
+                                        <div
+                                            class="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
+                                            {{ strtoupper(substr($item->name, 0, 1)) }}{{ strtoupper(Str::afterLast($item->name, ' ')[0] ?? '') }}
+                                        </div>
+                                        <div class="ml-4">
+                                            <h4 class="font-semibold text-white">{{ $item->name }}</h4>
+                                            <p class="text-sm text-gray-400">
+                                                {{ $item->designation }}
+                                            </p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 5 - Overall Experience -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "KingYolo's comprehensive approach to digital solutions is
-                                refreshing. They don't just deliver products, they deliver
-                                results. Our ROI has been exceptional."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-teal-500 to-cyan-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    RT
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Robert Thompson</h4>
-                                    <p class="text-sm text-gray-400">
-                                        VP Operations, Global Enterprises
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="w-full lg:w-1/3 px-2 shrink-0">
-                        <!-- Review 6 - Customer Service -->
-                        <div class="glass-effect p-6 rounded-xl h-full">
-                            <div class="flex items-center mb-4">
-                                <div class="text-xl text-yellow-400">★★★★★</div>
-                                <span class="ml-2 text-primary-gold font-semibold">5.0</span>
-                            </div>
-                            <p class="text-gray-300 mb-6 italic">
-                                "The level of customer support is outstanding. Any questions
-                                or issues are resolved quickly. It's clear they truly care
-                                about their clients' success."
-                            </p>
-                            <div class="flex items-center">
-                                <div
-                                    class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 rounded-full flex items-center justify-center text-white font-bold">
-                                    LW
-                                </div>
-                                <div class="ml-4">
-                                    <h4 class="font-semibold text-white">Lisa Wong</h4>
-                                    <p class="text-sm text-gray-400">COO, TechVision Corp</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                        @endforeach
+                    @endif
                 </div>
 
                 <!-- Controls -->

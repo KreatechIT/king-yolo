@@ -27,6 +27,11 @@ class MetaDataResource extends Resource
 
     protected static ?string $pluralLabel = 'Meta Datas';
 
+    public static function shouldRegisterNavigation(): bool
+    {
+        return false;
+    }
+
     public static function form(Form $form): Form
     {
         return $form

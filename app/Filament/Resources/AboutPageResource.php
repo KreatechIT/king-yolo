@@ -21,7 +21,7 @@ class AboutPageResource extends Resource
 
     protected static ?int $navigationSort = 4;
 
-    protected static ?string $navigationGroup = 'About Page';
+    protected static ?string $navigationGroup = 'OTHERS';
 
     protected static ?string $label = 'About Page Content';
 
