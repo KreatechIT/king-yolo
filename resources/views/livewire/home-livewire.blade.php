@@ -162,7 +162,7 @@
                         class="premium-btn px-8 sm:px-10 py-2 rounded-lg font-semibold hover:opacity-90 transform hover:scale-105">
                         Book a Demo
                     </button>
-                    <a href="{{route('service')}}"
+                    <a href="{{ route('service') }}"
                         class="premium-outline-btn px-8 sm:px-10 py-2 rounded-lg font-medium flex items-center justify-center">
                         Explore Services
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
@@ -218,7 +218,7 @@
                         <div class="text-sm text-background-dark/80">Support</div>
                     </div>
                 </div>
-                <a href="{{route('about')}}"
+                <a href="{{ route('about') }}"
                     class="inline-flex items-center text-background-dark font-semibold hover:opacity-80 transition-opacity">
                     Learn More About Us
                     <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
@@ -303,8 +303,7 @@
 
             <div class="grid lg:grid-cols-3 gap-8">
                 <!-- KingBot Card -->
-                <div class="glass-effect rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 group"
-                    data-aos="zoom-in" data-aos-delay="100">
+                <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" viewBox="0 0 24 24"
@@ -340,7 +339,7 @@
                             Advanced security protocols
                         </li>
                     </ul>
-                    <a href="{{route('kingbot')}}"
+                    <a href="{{ route('kingbot') }}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -351,8 +350,7 @@
                 </div>
 
                 <!-- KingPay Card -->
-                <div class="glass-effect rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 group"
-                    data-aos="zoom-in" data-aos-delay="200">
+                <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
@@ -383,7 +381,7 @@
                             Advanced fraud protection
                         </li>
                     </ul>
-                    <a href="{{route('kingpay')}}"
+                    <a href="{{ route('kingpay') }}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -394,8 +392,7 @@
                 </div>
 
                 <!-- KingMedia Card -->
-                <div class="glass-effect rounded-2xl p-8 hover:transform hover:scale-105 transition-all duration-300 group"
-                    data-aos="zoom-in" data-aos-delay="300">
+                <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="300">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
@@ -425,7 +422,7 @@
                             Content creation & strategy
                         </li>
                     </ul>
-                    <a href="{{route('kingmedia')}}"
+                    <a href="{{ route('kingmedia') }}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
