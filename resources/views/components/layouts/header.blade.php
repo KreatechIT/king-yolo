@@ -29,8 +29,6 @@
                         class="absolute top-full left-0 mt-2 w-48 bg-dark border border-primary-gold rounded-lg shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-300">
                         <a href="{{route('kingbot')}}"
                             class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingBot</a>
-                        <a href="{{route('kingpay')}}"
-                            class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingPay</a>
                         <a href="{{route('kingmedia')}}"
                             class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingMedia</a>
                     </div>
