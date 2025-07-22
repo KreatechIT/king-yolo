@@ -41,10 +41,10 @@ class ContactResource extends Resource
                     //     ->required()
                     //     ->maxLength(255)
                     //     ->columnSpan('half'),
-                    Forms\Components\TextInput::make('phone')
-                        ->required()
-                        ->maxLength(255)
-                        ->columnSpan('half'),
+                    // Forms\Components\TextInput::make('phone')
+                    //     ->required()
+                    //     ->maxLength(255)
+                    //     ->columnSpan('half'),
                     // Forms\Components\TextInput::make('subject')
                     //     ->required()
                     //     ->maxLength(255)
@@ -65,10 +65,10 @@ class ContactResource extends Resource
             ->columns([
                 Tables\Columns\TextColumn::make('name')
                     ->searchable(),
-                // Tables\Columns\TextColumn::make('email')
-                //     ->searchable(),
-                Tables\Columns\TextColumn::make('phone')
+                Tables\Columns\TextColumn::make('email')
                     ->searchable(),
+                // Tables\Columns\TextColumn::make('phone')
+                //     ->searchable(),
                 Tables\Columns\IconColumn::make('is_read')
                     ->boolean(),
                 Tables\Columns\TextColumn::make('created_at')

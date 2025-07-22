@@ -45,12 +45,13 @@
                             </p>
                         </div>
 
-                        <form id="contactForm" class="space-y-4">
+                        <form id="contactForm" class="space-y-4" wire:submit.prevent="submit">
+                            @csrf
                             <div class="group">
                                 <label for="name" class="block font-medium mb-1 text-lg" style="color: #d4af37">
                                     Full Name
                                 </label>
-                                <input type="text" id="name" name="name"
+                                <input type="text" id="name" name="name" wire:model.defer="name"
                                     class="w-full px-6 py-2 rounded-xl text-lg focus:outline-none form-focus transition-all duration-300"
                                     style="
                                         background: rgba(255, 255, 255, 0.05);
@@ -60,13 +61,16 @@
                                     placeholder="Enter your full name" required
                                     onfocus="this.style.borderColor='#D4AF37'"
                                     onblur="this.style.borderColor='rgba(212, 175, 55, 0.3)'" />
+                                @error('name')
+                                    <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
                             <div class="group">
                                 <label for="email" class="block font-medium mb-1 text-lg" style="color: #d4af37">
                                     Email Address
                                 </label>
-                                <input type="email" id="email" name="email"
+                                <input type="email" id="email" name="email" wire:model.defer="email"
                                     class="w-full px-6 py-2 rounded-xl text-lg focus:outline-none form-focus transition-all duration-300"
                                     style="
                                         background: rgba(255, 255, 255, 0.05);
@@ -76,13 +80,16 @@
                                     placeholder="Enter your email address" required
                                     onfocus="this.style.borderColor='#D4AF37'"
                                     onblur="this.style.borderColor='rgba(212, 175, 55, 0.3)'" />
+                                @error('email')
+                                    <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
                             <div class="group">
                                 <label for="message" class="block font-medium mb-1 text-lg" style="color: #d4af37">
                                     Message / Inquiry
                                 </label>
-                                <textarea id="message" name="message" rows="3"
+                                <textarea id="message" name="message" rows="3" wire:model.defer="message"
                                     class="w-full px-6 py-4 rounded-xl text-lg focus:outline-none form-focus transition-all duration-300 resize-vertical"
                                     style="
                                         background: rgba(255, 255, 255, 0.05);
@@ -91,8 +98,24 @@
                                     "
                                     placeholder="Tell us about your project or inquiry..." required onfocus="this.style.borderColor='#D4AF37'"
                                     onblur="this.style.borderColor='rgba(212, 175, 55, 0.3)'"></textarea>
+                                @error('message')
+                                    <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                                @enderror
+
+                                <input type="hidden" id="g-recaptcha-response" wire:model.defer="g_recaptcha_response">
+                                @error('g_recaptcha_response')
+                                    <p class="text-red-400 text-sm mt-1">{{ $message }}</p>
+                                @enderror
                             </div>
 
+                            {!! NoCaptcha::display(['data-callback' => 'onSubmit']) !!}
+
+                            @if (session('success'))
+                                <div class="text-white py-3 px-6 mt-6 rounded-md max-w-3xl"
+                                    style="background: rgba(0, 128, 0, 0.3);">
+                                    {{ session('success') }}
+                                </div>
+                            @endif
                             <button type="submit"
                                 class="w-full py-2 button-gradient font-bold text-lg rounded-xl hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl uppercase tracking-wide"
                                 style="color: #1c1c1c">
@@ -132,7 +155,8 @@
                             <div class="flex items-center group">
                                 <div class="w-12 h-12 rounded-xl flex items-center justify-center mr-4 transition-colors duration-300"
                                     style="background: rgba(212, 175, 55, 0.1)">
-                                    <svg class="w-6 h-6" style="color: #d4af37" fill="currentColor" viewBox="0 0 24 24">
+                                    <svg class="w-6 h-6" style="color: #d4af37" fill="currentColor"
+                                        viewBox="0 0 24 24">
                                         <path
                                             d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
                                     </svg>
@@ -197,3 +221,24 @@
         </div>
     </div>
 </section>
+
+
+@push('scripts')
+    {!! NoCaptcha::renderJs() !!}
+
+    <script>
+        function setRecaptchaToken() {
+            grecaptcha.ready(function () {
+                grecaptcha.execute('{{ env('NOCAPTCHA_SITEKEY') }}', {action: 'contact'}).then(function (token) {
+                    document.getElementById('g-recaptcha-response').value = token;
+                    // Force Livewire to update
+                    Livewire.find(document.querySelector('[wire\\:id]').getAttribute('wire:id')).set('g_recaptcha_response', token);
+                });
+            });
+        }
+
+        setRecaptchaToken();
+        // Optional: reset every 2 minutes
+        setInterval(setRecaptchaToken, 120000);
+    </script>
+@endpush
