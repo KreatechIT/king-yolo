@@ -226,7 +226,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Integration
                         </button>
-                        <a href="{{route('kingpay')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
+                        <a href="#" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
                             Details</a>
                     </div>
                 </div>

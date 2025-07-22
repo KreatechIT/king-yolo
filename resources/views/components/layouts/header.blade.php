@@ -74,8 +74,6 @@
                 class="ml-4 mt-2 space-y-2 max-h-0 overflow-hidden transition-all duration-300">
                 <a href="{{route('kingbot')}}"
                     class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingBot</a>
-                <a href="{{route('kingpay')}}"
-                    class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingPay</a>
                 <a href="{{route('kingmedia')}}"
                     class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingMedia</a>
             </div>

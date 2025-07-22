@@ -381,7 +381,7 @@
                             Advanced fraud protection
                         </li>
                     </ul>
-                    <a href="{{ route('kingpay') }}"
+                    <a href="#"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
