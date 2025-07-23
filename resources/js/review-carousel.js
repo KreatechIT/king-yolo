@@ -6,6 +6,11 @@ document.addEventListener("DOMContentLoaded", () => {
       prevId: "prev-review",
     },
     {
+      containerId: "kingtech-carousel",
+      nextId: "kingtech-next",
+      prevId: "kingtech-prev",
+    },
+    {
       containerId: "kingbot-carousel",
       nextId: "kingbot-next",
       prevId: "kingbot-prev",

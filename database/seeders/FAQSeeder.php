@@ -103,6 +103,32 @@ class FAQSeeder extends Seeder
                 "category" => "kingpay",
                 "sorting" => 4,
             ],
+
+            // KINGTECH FAQs
+            [
+                "question" => "Duis aute irure dolor in reprehenderit?",
+                "answer" => "Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.",
+                "category" => "kingtech",
+                "sorting" => 1,
+            ],
+            [
+                "question" => "Ut enim ad minim veniam?",
+                "answer" => "Curabitur blandit tempus porttitor. Integer posuere erat a ante venenatis dapibus posuere velit aliquet. Etiam porta sem malesuada magna mollis euismod.",
+                "category" => "kingtech",
+                "sorting" => 2,
+            ],
+            [
+                "question" => "How to withdraw funds from kingtech?",
+                "answer" => "Go to your dashboard, click on 'Withdraw', select your preferred method, and enter the amount you wish to withdraw.",
+                "category" => "kingtech",
+                "sorting" => 3,
+            ],
+            [
+                "question" => "Is kingtech secure?",
+                "answer" => "Yes, kingtech uses SSL encryption and complies with industry-standard security protocols to protect your transactions.",
+                "category" => "kingtech",
+                "sorting" => 4,
+            ],
         ];
 
         foreach ($data as $item) {

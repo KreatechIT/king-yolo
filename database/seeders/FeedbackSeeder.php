@@ -154,6 +154,43 @@ class FeedbackSeeder extends Seeder
                 "rating" => 4,
                 "message" => "Great performance overall. Integration was smooth, and the analytics features help us make informed decisions."
             ],
+
+             // KINGTECH FEEDBACK 
+            [
+                "name" => "Michael Chen",
+                "designation" => "CTO, FinanceFirst Bank",
+                "category" => "kingtech",
+                "rating" => 4,
+                "message" => "KingBot transformed our banking operations completely. What used to take hours now happens in minutes. The automation is flawless and the security features give us complete peace of mind."
+            ],
+            [
+                "name" => "Jane Smith",
+                "designation" => "Product Manager, SmartTech Solutions",
+                "category" => "kingtech",
+                "rating" => 5,
+                "message" => "Amazing tool! It has streamlined our workflows, and we’re seeing faster results with fewer errors."
+            ],
+            [
+                "name" => "Michael Johnson",
+                "designation" => "CEO, Innovate Ltd",
+                "category" => "kingtech",
+                "rating" => 3,
+                "message" => "The system works well, but we’d love to see more customization options to suit our unique needs."
+            ],
+            [
+                "name" => "Emily Davis",
+                "designation" => "Operations Head, DigitalWorks",
+                "category" => "kingtech",
+                "rating" => 5,
+                "message" => "Exceptional service! We’ve improved our internal communication and collaboration across departments."
+            ],
+            [
+                "name" => "David Lee",
+                "designation" => "CTO, FutureTech Innovations",
+                "category" => "kingtech",
+                "rating" => 4,
+                "message" => "Great performance overall. Integration was smooth, and the analytics features help us make informed decisions."
+            ],
         ];
 
         foreach ($data as $item) {

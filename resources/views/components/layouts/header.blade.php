@@ -5,7 +5,7 @@
             <!-- Logo -->
             <div class="flex items-center">
                 <a href="{{route('home')}}">
-                    <img src="assets/king-yolo.png" alt="KingYolo logo" class="max-w-60" />
+                    <img src="{{asset('assets/king-yolo.png')}}" alt="KingYolo logo" class="max-w-60" />
                 </a>
             </div>
 
@@ -31,6 +31,8 @@
                             class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingBot</a>
                         <a href="{{route('kingmedia')}}"
                             class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingMedia</a>
+                        <a href="{{route('kingtech')}}"
+                            class="block px-4 py-3 text-text-light hover:bg-primary-gold hover:text-background-dark transition-colors hover:underline">KingTech</a>
                     </div>
                 </div>
 
@@ -76,6 +78,8 @@
                     class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingBot</a>
                 <a href="{{route('kingmedia')}}"
                     class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingMedia</a>
+                <a href="{{route('kingtech')}}"
+                    class="block py-2 text-text-muted hover:text-primary-gold transition-colors">KingTech</a>
             </div>
         </div>
 
