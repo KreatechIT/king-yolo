@@ -8,6 +8,7 @@ Route::get('/login', function () {
     return redirect()->to(url('/admin'));
 })->name('login');
 
+
 Route::get('/', HomeLivewire::class)->name('home');
 Route::get('/about', AboutLivewire::class)->name('about');
 Route::get('/kingbot', KingBotLivewire::class)->name('kingbot');
