@@ -42,7 +42,7 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    <div class="carousel-slide h-full">
+                    {{-- <div class="carousel-slide h-full">
                         <div
                             class="relative max-w-6xl w-full h-full mx-auto rounded-2xl flex items-end justify-center px-4 sm:px-8 py-16 sm:py-20 hero-slide overflow-hidden">
                             <img src="assets/kingpay/kingpay-bg.svg" alt=""
@@ -76,9 +76,46 @@
                                 <img src="assets/kingpay/kingpay-5.png" alt="" />
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                     <!-- Slide 3 -->
+                    <div class="carousel-slide h-full">
+                        <div
+                            class="relative max-w-6xl w-full h-full mx-auto rounded-2xl flex items-end justify-center px-4 sm:px-8 py-16 sm:py-20 hero-slide overflow-hidden">
+                            <img src="assets/kingtech/kingtech-bg.png" alt=""
+                                class="absolute inset-0 w-full h-full object-cover rounded-xl" />
+                            <div
+                                class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-300 opacity-90 rounded-xl">
+                            </div>
+                            <div class="slide-content text-white relative z-10 text-center" data-aos="fade-up"
+                                data-aos-delay="300">
+                                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
+                                    KingTech Solutions
+                                </h2>
+                                <p class="text-base sm:text-lg">
+                                   Secure and seamless digital solutions for modern businesses
+                                </p>
+                            </div>
+                            <!-- Floating Boxes -->
+                            <div class="floating-box w-44 h-44 sm:size-54 shadow-2xl" style="top: -40px; left: -60px">
+                                <img src="assets/kingtech/kingtech-1.png" alt="" />
+                            </div>
+                            <div class="floating-box" style="top: 0; right: -80px">
+                                <img src="assets/kingtech/kingtech-3.png" alt="" />
+                            </div>
+                            <div class="floating-box" style="bottom: -40px; left: 10%">
+                                <img src="assets/kingtech/kingtech-4.png" alt="" />
+                            </div>
+                            <div class="floating-box" style="bottom: -50px; right: 8%">
+                                <img src="assets/kingtech/kingtech-2.png" alt="" />
+                            </div>
+                            <div class="floating-box" style="top: 50%; left: -40px">
+                                <img src="assets/kingtech/kingtech-5.png" alt="" />
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
                     <div class="carousel-slide h-full">
                         <div
                             class="relative max-w-6xl w-full mx-auto rounded-2xl px-4 sm:px-8 py-16 sm:py-20 flex items-end justify-center h-full hero-slide overflow-hidden">
@@ -350,7 +387,7 @@
                 </div>
 
                 <!-- KingPay Card -->
-                <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
+                {{-- <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
                     <div
                         class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
                         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
@@ -381,7 +418,49 @@
                             Advanced fraud protection
                         </li>
                     </ul>
-                    <a href="#"
+                    <a href="{{route('kingpay')}}"
+                        class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
+                        Learn More
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" class="ml-2">
+                            <path d="M7 17L17 7M17 7H7M17 7V17" />
+                        </svg>
+                    </a>
+                </div> --}}
+
+                <!-- KingTech Card -->
+                <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
+                    <div
+                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" class="text-white">
+                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
+                            <line x1="1" y1="10" x2="23" y2="10" />
+                        </svg>
+                    </div>
+                    <h3 class="font-inter text-2xl font-bold text-white mb-4">
+                        KingTech Solutions
+                    </h3>
+                    <p class="text-gray-300 mb-6">
+                        Scalable web development tailored to your business goals.
+                        From responsive sites to full-stack apps with seamless UX.
+                        Modern. Fast. Reliable.
+                    </p>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-center text-gray-300">
+                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
+                            Custom website development
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
+                            Full-stack application design
+                        </li>
+                        <li class="flex items-center text-gray-300">
+                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
+                            SEO-friendly architecture
+                        </li>
+                    </ul>
+                    <a href="{{ route('kingtech') }}"
                         class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
                         Learn More
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
@@ -390,6 +469,7 @@
                         </svg>
                     </a>
                 </div>
+
 
                 <!-- KingMedia Card -->
                 <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="300">
@@ -458,7 +538,7 @@
                     style="transform: translateX(0%)">
                     <!-- Cards with your actual reviews -->
 
-                      @if ($feedbacks && $feedbacks->count())
+                    @if ($feedbacks && $feedbacks->count())
                         @foreach ($feedbacks as $item)
                             <div class="w-full md:w-1/3 px-4 shrink-0">
                                 <div class="glass-effect p-8 rounded-xl h-full">

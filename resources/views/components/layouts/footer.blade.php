@@ -51,6 +51,10 @@
                             class="hover:text-[#d4af37] hover:underline transition-colors">KingMedia - Digital
                             Marketing</a>
                     </li>
+                    <li>
+                        <a href="{{route('kingtech')}}"
+                            class="hover:text-[#d4af37] hover:underline transition-colors">KingTech - Website Development</a>
+                    </li>
                 </ul>
             </div>
 

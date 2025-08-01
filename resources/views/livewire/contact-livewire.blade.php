@@ -20,7 +20,7 @@
                 <p class="text-xl lg:text-2xl mb-8 animate-fade-in-delay-1" style="color: #b8b8b8">
                     Ready to transform your banking operations? Let's discuss how
                     <span class="font-medium" style="color: #d4af37">KingBot</span>,
-                    <span class="font-medium" style="color: #d4af37">KingPay</span>, and
+                    <span class="font-medium" style="color: #d4af37">KingTech</span>, and
                     <span class="font-medium" style="color: #d4af37">KingMedia</span>
                     can revolutionize your business.
                 </p>
