@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Meta Data -->
-    @stack('meta')
+    <title>@stack('title')</title>
+    <meta name="description" content="@stack('meta_description')">
+    <meta name="keywords" content="@stack('meta_keywords')">
+
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/king-yolo.png') }}" type="image/x-icon">

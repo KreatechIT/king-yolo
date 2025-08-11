@@ -1,6 +1,14 @@
+@push('title')
+    Automated Banking for Safe Bank Transactions | KingBot
+@endpush
+@push('meta_description')
+    KingBot automates banking operations with transaction monitoring, secure withdrawals, and mobile approval integration.
+    Integrate with your BO via API.
+@endpush
+
 <section>
     <!-- Hero Section -->
-    <section class="pt-32 pb-16 flex flex-col justify-center overflow-hidden">
+    <div class="pt-32 pb-16 flex flex-col justify-center overflow-hidden">
         <!-- Carousel -->
         <div class="min-h-[90vh] flex pt-8 w-full">
             <div class="h-[70vh] sm:h-[75vh] mx-auto w-full carousel-container" data-aos="fade-up">
@@ -18,8 +26,14 @@
                                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                                     KingBot Automation
                                 </h2>
-                                <p class="text-base sm:text-lg">
-                                    Streamline your banking operations with automation
+                                <p class="text-base sm:text-md">
+                                    We provide automation solutions for businesses looking to streamline and secure
+                                    their financial operations. Our platform helps manage bank transfers,
+                                    transaction
+                                    monitoring and approval workflows with accuracy and consistency. With secure
+                                    integration with your back office systems, we help improve operational
+                                    efficiency
+                                    and reduce risk across your banking processes.
                                 </p>
                             </div>
                             <!-- Floating Boxes -->
@@ -42,43 +56,6 @@
                     </div>
 
                     <!-- Slide 2 -->
-                    {{-- <div class="carousel-slide h-full">
-                        <div
-                            class="relative max-w-6xl w-full h-full mx-auto rounded-2xl flex items-end justify-center px-4 sm:px-8 py-16 sm:py-20 hero-slide overflow-hidden">
-                            <img src="assets/kingpay/kingpay-bg.svg" alt=""
-                                class="absolute inset-0 w-full h-full object-cover rounded-xl" />
-                            <div
-                                class="absolute inset-0 bg-gradient-to-br from-green-600 to-green-300 opacity-90 rounded-xl">
-                            </div>
-                            <div class="slide-content text-white relative z-10 text-center" data-aos="fade-up"
-                                data-aos-delay="300">
-                                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
-                                    KingPay Solutions
-                                </h2>
-                                <p class="text-base sm:text-lg">
-                                    Secure and seamless payment processing for modern businesses
-                                </p>
-                            </div>
-                            <!-- Floating Boxes -->
-                            <div class="floating-box w-44 h-44 sm:size-54 shadow-2xl" style="top: -40px; left: -60px">
-                                <img src="assets/kingpay/kingpay-1.png" alt="" />
-                            </div>
-                            <div class="floating-box" style="top: 0; right: -80px">
-                                <img src="assets/kingpay/kingpay-3.png" alt="" />
-                            </div>
-                            <div class="floating-box" style="bottom: -40px; left: 10%">
-                                <img src="assets/kingpay/kingpay-4.png" alt="" />
-                            </div>
-                            <div class="floating-box" style="bottom: -50px; right: 8%">
-                                <img src="assets/kingpay/kingpay-2.png" alt="" />
-                            </div>
-                            <div class="floating-box" style="top: 50%; left: -40px">
-                                <img src="assets/kingpay/kingpay-5.png" alt="" />
-                            </div>
-                        </div>
-                    </div> --}}
-
-                    <!-- Slide 3 -->
                     <div class="carousel-slide h-full">
                         <div
                             class="relative max-w-6xl w-full h-full mx-auto rounded-2xl flex items-end justify-center px-4 sm:px-8 py-16 sm:py-20 hero-slide overflow-hidden">
@@ -92,8 +69,11 @@
                                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                                     KingTech Solutions
                                 </h2>
-                                <p class="text-base sm:text-lg">
-                                   Secure and seamless digital solutions for modern businesses
+                                <p class="text-base sm:text-md">
+                                    We provide professional website development services tailored to your business
+                                    needs. From new websites to redesigns, our team delivers custom website
+                                    development
+                                    with a focus on clean design, strong functionality, and reliable performance.
                                 </p>
                             </div>
                             <!-- Floating Boxes -->
@@ -115,7 +95,7 @@
                         </div>
                     </div>
 
-                    <!-- Slide 4 -->
+                    <!-- Slide 3 -->
                     <div class="carousel-slide h-full">
                         <div
                             class="relative max-w-6xl w-full mx-auto rounded-2xl px-4 sm:px-8 py-16 sm:py-20 flex items-end justify-center h-full hero-slide overflow-hidden">
@@ -129,9 +109,11 @@
                                 <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4">
                                     KingMedia Marketing
                                 </h2>
-                                <p class="text-base sm:text-lg">
-                                    Amplify your brand with comprehensive digital marketing
-                                    strategies
+                                <p class="text-base sm:text-md">
+                                    We offer professional SEO (Search Engine Optimization) and social media
+                                    marketing
+                                    services to help grow your business online. Our strategies improve your search
+                                    engine rankings and social presence with real, measurable results.
                                 </p>
                             </div>
                             <!-- Floating Boxes -->
@@ -183,11 +165,13 @@
             <div class="text-center">
                 <div
                     class="mb-2 text-primary-gold border rounded-full inline-block px-3 py-1 text-sm border-primary-gold font-semibold">
-                    Trusted by 500+ Businesses Worldwide
+                    Automate Your Banking Operations with KingBot
                 </div>
                 <h1 class="font-inter text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-6 leading-snug">
                     Transform Your Business with <br />
-                    <span class="text-primary-gold text-4xl sm:text-5xl lg:text-6xl">Digital Excellence.</span>
+                    <span class="text-primary-gold text-4xl sm:text-5xl lg:text-6xl">Digital Excellence </span>
+                    <br>through secure automation, efficient workflows, and integrated financial systems
+
                 </h1>
                 <p class="text-base sm:text-lg text-gray-300 mb-8 max-w-2xl mx-auto leading-relaxed">
                     Streamline operations with KingBot, process payments seamlessly with
@@ -211,9 +195,340 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="min-h-[80vh] m-4 md:m-8 grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 overflow-x-hidden">
+
+    <!-- Kingbot Section -->
+    <div>
+        <div class="py-20 relative" data-aos="fade-up">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                        What is KingBot?
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        KingBot is a business automation system designed to streamline banking operations for companies.
+                        It
+                        automates processes such as bank transfers, transaction retrieval, and real-time monitoring,
+                        removing the need for manual input by customer service or finance teams. KingBot also integrates
+                        securely with your existing back office systems using APIs.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-users-gear text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Reduces Manual Workload
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot automates routine banking activities like fund transfers, transaction checks, and
+                            approval workflows. This minimizes manual tasks and frees up your team to focus on
+                            higher-priority work.
+                        </p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-shield text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Improves Security
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot eliminates the need for customer service agents to log in directly to online banking
+                            portals. Sensitive credentials are never exposed, and all actions are handled securely
+                            within
+                            the system.
+                        </p>
+                    </div>
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-circle-nodes text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Back Office Integration
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot offers ready-to-use APIs that allow easy integration with your internal systems.
+                            This
+                            helps ensure a seamless workflow without disrupting your existing infrastructure.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-20 relative" data-aos="fade-up">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                        What features does KingBot offer?
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        KingBot offers a range of advanced features to streamline your banking operations. With modules
+                        for
+                        transaction retrieval, claim management, and real-time monitoring, KingBot ensures secure,
+                        efficient, and automated processes.
+                    </p>
+                </div>
+
+                <div class="grid lg:grid-cols-3 gap-8">
+                    <!-- Retrieve (RT) Module -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-retweet text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Retrieve (RT) Module
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot automates the retrieval of transaction records, ensuring real-time access with
+                            customizable filters for time, status, and user.
+                        </p>
+                    </div>
+
+                    <!-- Claim & Unclaim Mechanism -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-check-circle text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Claim & Unclaim Mechanism
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            Prevent duplicate actions by securely allowing users to claim or unclaim transactions,
+                            ensuring
+                            seamless control over banking tasks.
+                        </p>
+                    </div>
+
+                    <!-- Withdraw (WD) Module -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-arrow-down text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Withdraw (WD) Module
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            The queue management system structures withdrawal requests based on business rules, ensuring
+                            organized and prioritized processing.
+                        </p>
+                    </div>
+
+                    <!-- Queue Management System -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-list-ul text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Queue Management System
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            This system structures withdrawal requests into a processing queue, ensuring all requests
+                            are
+                            handled efficiently and in order.
+                        </p>
+                    </div>
+
+                    <!-- Droid Automation -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-robot text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Droid Automation
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot enables automated phone-based approvals (e.g., SecureTAC) using a custom Android
+                            APK,
+                            making approvals fast and secure.
+                        </p>
+                    </div>
+
+                    <!-- User Access Management -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-user-shield text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            User Access Management
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            This feature allows role-based control over banking tasks, ensuring only authorized
+                            personnel
+                            can perform sensitive actions.
+                        </p>
+                    </div>
+
+                    <!-- Audit Logs -->
+                    <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="100">
+                        <div class="flex justify-center items-center">
+                            <div
+                                class="w-16 h-16 bg-primary-gold text-white rounded-full flex items-center justify-center mb-6">
+                                <i class="fa-solid fa-clipboard-list text-2xl"></i>
+                            </div>
+                        </div>
+                        <h3 class="font-inter text-2xl font-bold text-white mb-4 text-center">
+                            Audit Logs
+                        </h3>
+                        <p class="text-gray-300 mb-6 text-center">
+                            KingBot tracks every user action, including timestamps and transaction IDs, providing full
+                            traceability for all activities.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-20 text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12">
+                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-primary-gold mb-6">
+                        Which banks does KingBot support?
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        KingBot currently supports a wide range of Malaysian banks for both transaction retrieval and
+                        withdrawals.
+                    </p>
+                </div>
+
+                <!-- Table Section -->
+                <div class="overflow-x-auto bg-gray-800 p-6 rounded-lg shadow-lg">
+                    <table class="min-w-full table-auto text-sm text-gray-300 text-center">
+                        <thead class="bg-primary-gold text-white">
+                            <tr>
+                                <th class="py-3 px-6 text-left">Bank</th>
+                                <th class="py-3 px-6 text-center">Retrieve (RT) Support</th>
+                                <th class="py-3 px-6 text-center">Withdraw (WD) Support</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">Maybank</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">MAE by Maybank2u</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">CIMB Clicks</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">CIMB BizChannel (Old Version)</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">Public Bank</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">AmOnline</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">Hong Leong Bank</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">RHB Mobile Banking</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">RHB Bank</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">MyPB</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">CIMB Biz (Old & New Versions)</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">CIMB OCTO MY</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr class="bg-gray-700">
+                                <td class="py-3 px-6 text-left">HLB Connect</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-6 text-left">CIMB OCTO Biz (New Version)</td>
+                                <td class="py-3 px-6">Yes</td>
+                                <td class="py-3 px-6">Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="py-20 text-white">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-12" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-primary-gold mb-6">
+                        Does KingBot support automated mobile approvals?
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-3xl mx-auto">
+                        Yes, KingBot does support automated mobile approvals. For banks that use SecureTAC or mobile
+                        confirmation, a custom Android app (Droid APK) is used for automated mobile approvals. This
+                        requires Android 11 or above and installation of the relevant banking apps on the device.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <div class="min-h-[80vh] m-4 md:m-8 grid grid-cols-1 md:grid-cols-2 mt-12 gap-8 overflow-x-hidden">
         <!-- About Us Section -->
         <div class="w-full h-full bg-[#d4af37]/75 rounded-xl p-8 flex flex-col justify-center relative overflow-hidden"
             data-aos="fade-right">
@@ -232,27 +547,36 @@
                     About KingYolo
                 </div>
                 <h2 class="font-inter text-4xl lg:text-5xl font-bold text-background-dark mb-6">
-                    Pioneering Digital
-                    <span class="block">Innovation</span>
+                    What is KingYolo
                 </h2>
                 <p class="text-lg text-background-dark/90 mb-6 leading-relaxed">
-                    At KingYolo, we're transforming how businesses operate in the
-                    digital age. Our cutting-edge solutions in banking automation,
-                    payment processing, and digital marketing have empowered over 500
-                    companies worldwide to achieve unprecedented growth and efficiency.
+                    KingYolo is a digital technology company that provides banking automation, payment processing, and
+                    digital marketing solutions for businesses. The company has supported over 500 organizations
+                    worldwide in improving operational efficiency, reducing manual workload, and accelerating digital
+                    growth.
                 </p>
-                <div class="grid grid-cols-3 gap-4 mb-6">
-                    <div class="text-center bg-white/10 py-4 rounded-lg">
-                        <div class="text-3xl font-bold text-background-dark">500+</div>
-                        <div class="text-sm text-background-dark/80">Clients Served</div>
+                <div class="grid grid-cols-1 gap-4 mb-6">
+                    <div class="bg-white/10 px-2 py-4 rounded-lg">
+                        <div class="text-lg font-bold text-background-dark">KingBot</div>
+                        <div class="text-md text-background-dark/80">- a banking automation system that manages secure
+                            fund transfers, transaction monitoring, and real-time workflow integration</div>
                     </div>
-                    <div class="text-center bg-white/10 py-4 rounded-lg">
-                        <div class="text-3xl font-bold text-background-dark">99.9%</div>
-                        <div class="text-sm text-background-dark/80">Uptime Rate</div>
+                    <div class="bg-white/10 px-2 py-4 rounded-lg">
+                        <div class="text-lg font-bold text-background-dark">KingPay</div>
+                        <div class="text-md text-background-dark/80">- a payment processing solution designed to
+                            simplify and automate financial transactions
+                        </div>
                     </div>
-                    <div class="text-center bg-white/10 py-4 rounded-lg">
-                        <div class="text-3xl font-bold text-background-dark">24/7</div>
-                        <div class="text-sm text-background-dark/80">Support</div>
+                    <div class="bg-white/10 px-2 py-4 rounded-lg">
+                        <div class="text-lg font-bold text-background-dark">KingMedia</div>
+                        <div class="text-md text-background-dark/80">- offers SEO services and social media marketing
+                            strategies to help brands grow online</div>
+                    </div>
+                    <div class="bg-white/10 px-2 py-4 rounded-lg">
+                        <div class="text-lg font-bold text-background-dark">KingTech</div>
+                        <div class="text-md text-background-dark/80">- focus on delivering custom, scalable, and
+                            responsive websites for businesses with a focus on automation, integration, and business
+                            scalability, KingYolo helps companies adapt and thrive in the digital age.</div>
                     </div>
                 </div>
                 <a href="{{ route('about') }}"
@@ -317,10 +641,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- What We Offer Section -->
-    <section class="py-20 relative" data-aos="fade-up">
+    <div class="py-20 relative" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up" data-aos-delay="100">
                 <div
@@ -358,22 +682,21 @@
                         KingBot Automation
                     </h3>
                     <p class="text-gray-300 mb-6">
-                        Revolutionize your banking operations with AI-powered automation
-                        that processes transactions, manages customer inquiries, and
-                        ensures compliance 24/7.
+                        KingBot is a banking automation system that helps businesses manage financial operations
+                        securely and efficiently.
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Automated transaction processing
+                            Automates bank transfers, transaction monitoring, and approval workflows
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Real-time compliance monitoring
+                            Integrates with back office systems through secure APIs
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Advanced security protocols
+                            Supports real-time tracking across multiple Malaysian banks
                         </li>
                     </ul>
                     <a href="{{ route('kingbot') }}"
@@ -385,48 +708,6 @@
                         </svg>
                     </a>
                 </div>
-
-                <!-- KingPay Card -->
-                {{-- <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
-                    <div
-                        class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" class="text-white">
-                            <rect x="1" y="4" width="22" height="16" rx="2" ry="2" />
-                            <line x1="1" y1="10" x2="23" y2="10" />
-                        </svg>
-                    </div>
-                    <h3 class="font-inter text-2xl font-bold text-white mb-4">
-                        KingPay Solutions
-                    </h3>
-                    <p class="text-gray-300 mb-6">
-                        Secure, fast, and reliable payment processing that scales with
-                        your business. Accept payments globally with enterprise-grade
-                        security.
-                    </p>
-                    <ul class="space-y-3 mb-8">
-                        <li class="flex items-center text-gray-300">
-                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Multi-currency support
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Instant transaction processing
-                        </li>
-                        <li class="flex items-center text-gray-300">
-                            <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Advanced fraud protection
-                        </li>
-                    </ul>
-                    <a href="{{route('kingpay')}}"
-                        class="premium-outline-btn px-6 py-3 rounded-lg font-medium inline-flex items-center group-hover:bg-primary-gold group-hover:text-background-dark transition-all duration-300">
-                        Learn More
-                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
-                            fill="none" stroke="currentColor" stroke-width="2" class="ml-2">
-                            <path d="M7 17L17 7M17 7H7M17 7V17" />
-                        </svg>
-                    </a>
-                </div> --}}
 
                 <!-- KingTech Card -->
                 <div class="glass-effect rounded-2xl p-8 group" data-aos="zoom-in" data-aos-delay="200">
@@ -442,22 +723,20 @@
                         KingTech Solutions
                     </h3>
                     <p class="text-gray-300 mb-6">
-                        Scalable web development tailored to your business goals.
-                        From responsive sites to full-stack apps with seamless UX.
-                        Modern. Fast. Reliable.
+                        KingTech Solutions is a website development agency that creates tailored, scalable websites for businesses.
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Custom website development
+                            Offers custom website development for startups, SMEs, and enterprises
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Full-stack application design
+                            Builds responsive, SEO-friendly websites with performance in mind
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            SEO-friendly architecture
+                            Supports redesigns, CMS integration, and ongoing web maintenance
                         </li>
                     </ul>
                     <a href="{{ route('kingtech') }}"
@@ -485,21 +764,20 @@
                         KingMedia Marketing
                     </h3>
                     <p class="text-gray-300 mb-6">
-                        Comprehensive digital marketing solutions that amplify your brand
-                        presence and drive measurable results across all digital channels.
+                        KingMedia is a digital marketing agency that helps brands grow through SEO and social media.
                     </p>
                     <ul class="space-y-3 mb-8">
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Social media management
+                              Provides SEO services to improve search rankings and organic traffic
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            SEO & SEM optimization
+                            Delivers social media marketing strategies across major platforms
                         </li>
                         <li class="flex items-center text-gray-300">
                             <div class="w-2 h-2 bg-primary-gold rounded-full mr-3"></div>
-                            Content creation & strategy
+                            Focuses on measurable growth through content, engagement, and analytics
                         </li>
                     </ul>
                     <a href="{{ route('kingmedia') }}"
@@ -513,10 +791,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <!-- Testimonials Section -->
-    <section class="py-20 relative bg-gray-900 text-white overflow-hidden" data-aos="fade-up">
+    <div class="py-20 relative bg-gray-900 text-white overflow-hidden" data-aos="fade-up">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
             <div class="text-center mb-16">
                 <div
@@ -586,7 +864,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 
     <div class="bg-dark text-white font-roboto">
         <section class="bg-gradient-to-br from-slate-900 to-gray-900 py-20" data-aos="fade-up">
