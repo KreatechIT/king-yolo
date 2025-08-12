@@ -1,3 +1,11 @@
+@push('title')
+    Banking Automate & Transaction Monitor System | KingBot
+@endpush
+@push('meta_description')
+    Automate bank transfers, approvals & transaction tracking with KingBot. Secure, API-ready banking automation built for
+    business efficiency. Get yours now!
+@endpush
+
 <section>
     <!-- Hero Section -->
     <div class="py-20 pt-32 relative">
@@ -14,9 +22,9 @@
                         Suite
                     </h2>
                     <p class="text-lg text-gray-300 mb-8">
-                        Transform your banking operations with intelligent automation that
-                        handles complex transactions, customer inquiries, and compliance
-                        requirements with unmatched precision and speed.
+                        KingBot is a secure, API-ready system designed to automate core banking operations for
+                        businesses including transaction monitoring, withdrawals, and approval flows without exposing
+                        sensitive credentials or relying on manual processes.
                     </p>
 
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-8">
@@ -33,7 +41,8 @@
                                 24/7 Operations
                             </h4>
                             <p class="text-gray-300 text-sm">
-                                Continuous automated processing without downtime
+                                Keep your banking tasks running around the clock, even during weekends and holidays.
+                                KingBot ensures continuous transaction monitoring and automation without downtime.
                             </p>
                         </div>
 
@@ -47,10 +56,11 @@
                                 </svg>
                             </div>
                             <h4 class="font-inter font-bold text-white mb-2">
-                                Enterprise Security
+                                Enterprise-Grade Security
                             </h4>
                             <p class="text-gray-300 text-sm">
-                                Bank-grade security with advanced encryption
+                                All interactions are handled within a secure system architecture. No direct access to
+                                banking credentials is required, minimizing security risks for your team.
                             </p>
                         </div>
 
@@ -67,7 +77,8 @@
                                 Real-time Analytics
                             </h4>
                             <p class="text-gray-300 text-sm">
-                                Comprehensive reporting and insights
+                                Track transactions, approvals, and queue performance as they happen. Get actionable
+                                insights with live data and filtering options tailored to your operations.
                             </p>
                         </div>
 
@@ -85,7 +96,8 @@
                                 Easy Integration
                             </h4>
                             <p class="text-gray-300 text-sm">
-                                Seamless integration with existing systems
+                                KingBot connects seamlessly to your back-office systems through secure APIs, enabling
+                                quick deployment without overhauling your existing infrastructure.
                             </p>
                         </div>
                     </div>
@@ -123,6 +135,150 @@
                         <div class="absolute -top-6 -right-6 w-20 h-20 bg-white/10 rounded-lg animate-float"></div>
                         <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-white/10 rounded-lg animate-float"
                             style="animation-delay: -2s"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="relative">
+            <div class="absolute inset-0 parallax-bg"></div>
+            <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <!-- Left Side Content -->
+                    <div class="order-2" data-aos="fade-left">
+                        <div
+                            class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
+                            KingBot Automation
+                        </div>
+                        <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                            <span class="text-primary-gold">What KingBot</span> Helps You Do
+                        </h2>
+                        <p class="text-lg text-gray-300 mb-8">
+                            KingBot simplifies and automates time-sensitive, repetitive banking workflows, allowing your
+                            team to:
+                        </p>
+
+                        <ul class="text-lg text-gray-300 mb-8 list-disc pl-6">
+                            <li>Monitor incoming transactions in real-time</li>
+                            <li>Manage withdrawals with intelligent queuing</li>
+                            <li>Handle mobile banking approvals automatically</li>
+                            <li>Assign user access and track every action securely</li>
+                        </ul>
+
+                        <p class="text-lg text-gray-300">
+                            KingBot ensures smooth and efficient financial operations, even when handling high-volume
+                            payouts or managing tighter control over your cash flow systems.
+                        </p>
+                    </div>
+
+                    <!-- Right Side Image -->
+                    <div class="order-1" data-aos="fade-right">
+                        <div class="relative">
+                            <div
+                                class="bg-gradient-to-br from-blue-600 to-purple-500 rounded-2xl p-8 h-96 flex items-center justify-center">
+                                <div class="text-center text-white">
+                                    <div
+                                        class="w-24 h-24 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-6">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                            stroke-width="2" class="text-white">
+                                            <path
+                                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+                                        </svg>
+                                    </div>
+                                    <h3 class="text-2xl font-bold mb-2">
+                                        Streamline Your Banking Processes
+                                    </h3>
+                                    <p class="text-blue-100">
+                                        Automate operations and stay ahead with intelligent financial tools.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- Floating elements -->
+                            <div class="absolute -top-6 -right-6 w-20 h-20 bg-white/10 rounded-lg animate-float"></div>
+                            <div class="absolute -bottom-6 -left-6 w-16 h-16 bg-white/10 rounded-lg animate-float"
+                                style="animation-delay: -2s"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Why Businesses Choose KingBot -->
+        <div class="py-20 relative">
+            <div class="max-w-7xl mx-auto px-6 lg:px-8">
+                <div class="text-center mb-16">
+                    <div
+                        class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
+                        Why Choose KingBot
+                    </div>
+                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                        Why Businesses Choose <span class="text-primary-gold">KingBot</span>
+                    </h2>
+                    <p class="text-lg text-gray-300 max-w-2xl mx-auto">
+                        Discover the reasons businesses trust KingBot for seamless banking automation and enhanced
+                        security.
+                    </p>
+                </div>
+
+                <!-- Features -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Secure by Design -->
+                    <div class="glass-effect p-6 rounded-lg" data-aos="fade-up">
+                        <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="text-white">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="M12 6v6l4 2" />
+                            </svg>
+                        </div>
+                        <h4 class="font-inter font-bold text-white mb-2">
+                            Secure by Design
+                        </h4>
+                        <p class="text-gray-300 text-sm">
+                            Bank logins and credentials are never shared with customer service teams. All actions happen
+                            through KingBot’s controlled interface, reducing exposure to risk.
+                        </p>
+                    </div>
+
+                    <!-- Scales with Your Operations -->
+                    <div class="glass-effect p-6 rounded-lg" data-aos="fade-up" data-aos-delay="100">
+                        <div class="w-12 h-12 bg-purple-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="text-white">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                <path d="M9 12l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <h4 class="font-inter font-bold text-white mb-2">
+                            Scales with Your Operations
+                        </h4>
+                        <p class="text-gray-300 text-sm">
+                            There’s no hard limit to how many bank accounts or transactions KingBot can manage. It’s
+                            built to handle high throughput with stability and visibility.
+                        </p>
+                    </div>
+
+                    <!-- Ready for Integration -->
+                    <div class="glass-effect p-6 rounded-lg" data-aos="fade-up" data-aos-delay="200">
+                        <div class="w-12 h-12 bg-orange-600 rounded-lg flex items-center justify-center mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                class="text-white">
+                                <path d="M3 3v18h18" />
+                                <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3" />
+                            </svg>
+                        </div>
+                        <h4 class="font-inter font-bold text-white mb-2">
+                            Ready for Integration
+                        </h4>
+                        <p class="text-gray-300 text-sm">
+                            Connect KingBot to your internal platforms through our developer-friendly API.
+                        </p>
                     </div>
                 </div>
             </div>
