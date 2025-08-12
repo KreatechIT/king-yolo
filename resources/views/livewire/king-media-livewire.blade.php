@@ -112,7 +112,7 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Campaign
                         </button>
-                        <a href="{{route('kingmedia')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
+                        <a href="{{ route('kingmedia') }}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
                             View Details
                         </a>
                     </div>
@@ -148,8 +148,8 @@
                     </div>
                     <h3 class="text-xl font-inter font-bold mb-3">Google SEM</h3>
                     <p class="text-gray-300 mb-4">
-                        Drive targeted traffic with strategic search engine marketing
-                        campaigns that deliver measurable results.
+                        KingMedia’s Google SEM services help businesses generate leads and sales through targeted paid
+                        advertising. We manage strategic Google Ads campaigns focused on ROI and conversions.
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -157,21 +157,21 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Keyword Research & Optimization
+                            Google Search Ads
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Ad Copy Creation
+                            Display & Remarketing
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Campaign Management
+                            Performance Optimization
                         </li>
                     </ul>
                 </div>
@@ -186,8 +186,9 @@
                     </div>
                     <h3 class="text-xl font-inter font-bold mb-3">Google SEO</h3>
                     <p class="text-gray-300 mb-4">
-                        Improve organic visibility and rankings with comprehensive search
-                        engine optimization strategies.
+                        KingMedia’s Google SEO services help businesses rank higher on search engines and grow organic
+                        traffic. Our SEO strategies focus on long-term visibility, technical health, and content
+                        performance.
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -195,21 +196,21 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Technical SEO Audit
+                            On-Page SEO
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Content Optimization
+                            Off-Page SEO
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Link Building
+                            Technical SEO
                         </li>
                     </ul>
                 </div>
@@ -227,8 +228,10 @@
                     </div>
                     <h3 class="text-xl font-inter font-bold mb-3">Meta Ads</h3>
                     <p class="text-gray-300 mb-4">
-                        Reach your target audience effectively with Facebook and Instagram
-                        advertising campaigns.
+                        KingMedia’s Meta Ads services help brands connect with the right audience across Facebook,
+                        Instagram, and Messenger.
+                        We focus on driving real business results through precise targeting, creative storytelling, and
+                        continuous performance optimization.
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -236,21 +239,21 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Audience Targeting
+                            Precise Audience Targeting
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Creative Development
+                            Creative Content Strategy
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Performance Optimization
+                            Data-Driven Campaign Optimization
                         </li>
                     </ul>
                 </div>
@@ -268,8 +271,11 @@
                     </div>
                     <h3 class="text-xl font-inter font-bold mb-3">TikTok Ads</h3>
                     <p class="text-gray-300 mb-4">
-                        Engage younger audiences with creative and viral TikTok
-                        advertising campaigns.
+                        KingMedia’s TikTok Ads services help brands go viral and connect with a younger, mobile-first
+                        audience.
+                        We craft high-impact campaigns using trending formats, authentic content, and smart targeting to
+                        boost reach and engagement.
+
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -277,21 +283,21 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Viral Content Strategy
+                            Platform-Specific Targeting
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Influencer Partnerships
+                            Authentic, Trend-Driven Creatives
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Trend Analysis
+                            Real-Time Performance Scaling
                         </li>
                     </ul>
                 </div>
@@ -309,8 +315,9 @@
                     </div>
                     <h3 class="text-xl font-inter font-bold mb-3">Video Production</h3>
                     <p class="text-gray-300 mb-4">
-                        Professional video content creation for marketing, training, and
-                        brand storytelling.
+                        KingMedia’s video production services help brands tell their story through high-quality,
+                        engaging visuals. From concept to final cut, we create videos that capture attention, drive
+                        emotion, and deliver results across all digital platforms.
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -318,21 +325,21 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Script Writing
+                            Creative Concept & Scripting
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Professional Filming
+                            Professional Filming & Editing
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Post-Production
+                            Multi-Platform Delivery
                         </li>
                     </ul>
                 </div>
@@ -350,8 +357,8 @@
                         Social Media Management
                     </h3>
                     <p class="text-gray-300 mb-4">
-                        Complete social media management to build brand awareness and
-                        engage your community.
+                        End-to-end social media strategy, content, and engagement — all done for you. We help you grow
+                        an audience that listens, interacts, and buys.
                     </p>
                     <ul class="text-sm space-y-2">
                         <li class="flex items-center">
@@ -359,21 +366,65 @@
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Content Creation
+                            Branded Content That Converts
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Community Management
+                            Real-Time Audience Engagement
                         </li>
                         <li class="flex items-center">
                             <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
                                 <path
                                     d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
                             </svg>
-                            Analytics & Reporting
+                            Transparent Metrics That Matter
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Brand Awareness in FB -->
+                <div class="service-card rounded-xl p-6" data-aos="fade-up" data-aos-delay="350">
+                    <div
+                        class="bg-gradient-to-r from-yellow-500 to-yellow-600 w-12 h-12 rounded-lg flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="m21 7.5-9-5.25L3 7.5m18 0-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9" />
+                        </svg>
+
+                    </div>
+                    <h3 class="text-xl font-inter font-bold mb-3">
+                        Brand Awareness in FB
+                    </h3>
+                    <p class="text-gray-300 mb-4">
+                        Turn your Facebook into your strongest marketing channel. We help you grow brand recognition,
+                        attract the right audience, and stay top-of-mind through targeted content and strategic paid
+                        campaigns.
+                    </p>
+                    <ul class="text-sm space-y-2">
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
+                            </svg>
+                            Custom Facebook content to match your brand voice
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
+                            </svg>
+                            Smart audience targeting for maximum reach
+                        </li>
+                        <li class="flex items-center">
+                            <svg class="w-4 h-4 text-gold mr-2" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M16.707 5.293a1 1 0 010 1.414L8.414 15l-4.121-4.121a1 1 0 111.414-1.414L8.414 12.172l7.293-7.293z" />
+                            </svg>
+                            Data-driven strategies to grow followers and trust
                         </li>
                     </ul>
                 </div>
@@ -434,7 +485,7 @@
                             </div>
                         @endforeach
                     @endif
-                    
+
                 </div>
 
                 <!-- Controls -->
@@ -469,7 +520,7 @@
             </div>
 
             <div class="space-y-4">
-                 @if ($faqs)
+                @if ($faqs)
                     @foreach ($faqs as $item)
                         <div class="glass-effect rounded-xl overflow-hidden" data-aos="fade-up" data-aos-delay="100"
                             data-aos-duration="800">
@@ -521,7 +572,7 @@
                         <button class="premium-btn px-8 py-4 rounded-lg font-semibold text-lg">
                             Book a Demo
                         </button>
-                        <a href="{{route('contact')}}"
+                        <a href="{{ route('contact') }}"
                             class="bg-white/10 hover:bg-white/20 text-white px-8 py-4 rounded-lg font-medium text-lg transition-all duration-300">
                             Contact Us
                         </a>
