@@ -1,3 +1,10 @@
+@push('title')
+   Top Digital Marketing Company in Malaysia | KingMedia
+@endpush
+@push('meta_description')
+    Looking for a trusted marketing company in Malaysia? KingMedia is your go-to agency digital marketing and agency marketing digital specialist in SEA.
+@endpush
+
 <section>
     <!-- KingMedia div -->
     <div class="py-20 pt-32 relative">
@@ -41,8 +48,7 @@
                         Excellence
                     </h2>
                     <p class="text-lg text-gray-300 mb-8">
-                        Amplify your brand with our comprehensive digital marketing
-                        solutions. From SEO to social media, we drive results that matter.
+                        KingMedia helps businesses grow online with data-driven digital marketing services. From Google SEO and SEM to social media and branded video content, we deliver measurable results tailored to your brand goals.
                     </p>
 
                     <div class="space-y-6 mb-8">
@@ -60,8 +66,7 @@
                                     SEO & SEM
                                 </h4>
                                 <p class="text-gray-300">
-                                    Dominate search results with our proven optimization
-                                    strategies and targeted advertising campaigns.
+                                   Improve visibility and drive targeted traffic with our Google SEO and SEM solutions. We optimize your website for search engines and manage paid advertising campaigns that convert.
                                 </p>
                             </div>
                         </div>
@@ -80,8 +85,7 @@
                                     Social Media Management
                                 </h4>
                                 <p class="text-gray-300">
-                                    Build engaging communities across all platforms with
-                                    strategic content and community management.
+                                    Build a strong social presence with strategic content and active community management. We help your brand connect authentically across platforms like Instagram, Facebook, TikTok, and LinkedIn.
                                 </p>
                             </div>
                         </div>
@@ -101,8 +105,7 @@
                                     Video Production
                                 </h4>
                                 <p class="text-gray-300">
-                                    Create compelling visual content that captures attention and
-                                    drives engagement across all channels.
+                                   Capture attention with compelling videos designed for engagement and conversion. From product explainers to ads and social reels, our team creates video content that performs.
                                 </p>
                             </div>
                         </div>
