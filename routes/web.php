@@ -17,6 +17,7 @@ Route::get('/kingtech', KingTechLivewire::class)->name('kingtech');
 Route::get('/service', ServiceLivewire::class)->name('service');
 Route::get('/contact', ContactLivewire::class)->name('contact');
 Route::get('/blog', BlogLivewire::class)->name('blog');
+Route::get('/blog/{slug}', BlogPreviewLivewire::class)->name('blog.show');
 
 // Route::get('/kingpay', KingPayLivewire::class)->name('kingpay');
 

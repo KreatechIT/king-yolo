@@ -53,6 +53,9 @@ class BlogResource extends Resource
                 Toggle::make('is_featured'),
                 Toggle::make('status')->default(true),
                 RichEditor::make('content')
+                 ->disableToolbarButtons([
+                    'codeBlock',
+                ])
             ])
                 ->columns(1) 
                 ->columnSpanFull(), 

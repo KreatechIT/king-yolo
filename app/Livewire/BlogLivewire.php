@@ -19,7 +19,7 @@ class BlogLivewire extends Component
 
         return view('livewire.blog-livewire', [
             'latestBlog' => $this->latestBlog,
-            'blogs' => Blog::paginate(3),
+            'blogs' => Blog::where('id', '!=', $this->latestBlog->id)->paginate(3),
         ]);
     }
 }
