@@ -1,3 +1,10 @@
+@push('title')
+    About Us | KingAutomation Smart Systems Experts
+@endpush
+@push('meta_description')
+    Discover KingAutomation | Innovators in smart automation solutions for businesses across Malaysia, delivering efficiency
+    through technology and integration.
+@endpush
 <section>
     <div class="premium-gradient">
         <!-- Hero Section -->
@@ -11,14 +18,76 @@
                     <h1 class="font-inter text-5xl lg:text-6xl font-bold text-white mb-6 leading-tight" data-aos="fade-up"
                         data-aos-delay="100">
                         Pioneering the Future of
-                        <span class="text-primary-gold">Digital Excellence</span>
+                        <span class="text-primary-gold">Digital Excellence with KingYolo</span>
                     </h1>
                     <p class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed" data-aos="fade-up"
                         data-aos-delay="200">
-                        Since our inception, we've been at the forefront of digital
-                        transformation, empowering businesses worldwide with cutting-edge
-                        automation, payment solutions, and marketing excellence.
+                        KingYolo is a unified digital solutions platform helping businesses grow through automation,
+                        custom web development, and performance-driven marketing.
                     </p>
+                </div>
+
+                <!-- Services Grid -->
+                <div class="mb-20">
+                    <h2 class="font-inter text-3xl text-center sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                        We Provide
+                    </h2>
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- KingBot -->
+                        <div class="glass-effect rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="100">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-blue-500 to-purple-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                                <!-- Optional: Add an icon here -->
+                            </div>
+                            <h3 class="font-inter text-2xl font-bold text-white mb-4">KingBot</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Automate routine financial operations like bank transfers, real-time transaction
+                                monitoring,
+                                and mobile approvals. KingBot reduces manual workload, boosts security, and integrates
+                                seamlessly with back-office systems.
+                            </p>
+                        </div>
+
+                        <!-- KingTech -->
+                        <div class="glass-effect rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="200">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-primary-gold to-yellow-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                                <!-- Optional: Add an icon here -->
+                            </div>
+                            <h3 class="font-inter text-2xl font-bold text-white mb-4">KingTech</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                As a trusted website development agency, KingTech builds secure, high-performance
+                                websites
+                                tailored to your business goals. Our custom website development services include
+                                seamless
+                                system integration and responsive UI/UX design.
+                            </p>
+                        </div>
+
+                        <!-- KingMedia -->
+                        <div class="glass-effect rounded-2xl p-8 text-center" data-aos="fade-up" data-aos-delay="300">
+                            <div
+                                class="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-xl flex items-center justify-center mb-6 mx-auto">
+                                <!-- Optional: Add an icon here -->
+                            </div>
+                            <h3 class="font-inter text-2xl font-bold text-white mb-4">KingMedia</h3>
+                            <p class="text-gray-300 leading-relaxed">
+                                Grow your brand with targeted digital marketing. KingMedia specializes in SEO services,
+                                Google SEM, social media marketing, and content strategies built to drive traffic,
+                                engagement, and conversions.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Impact Statement -->
+                    <div class="text-center mt-10" data-aos="fade-up" data-aos-delay="400">
+                        <p class="text-lg text-gray-300 max-w-3xl mx-auto leading-relaxed">
+                            With clients across industries and over 500 businesses served globally, KingYolo helps
+                            organizations reduce manual work, increase visibility, and integrate technology into their
+                            daily
+                            operations.
+                        </p>
+                    </div>
                 </div>
 
                 <!-- Stats Section -->
@@ -120,8 +189,7 @@
                                     <div class="w-full md:w-1/2 text-center {{ $textAlignment }}"
                                         data-aos="{{ $animation }}">
                                         <div class="glass-effect rounded-xl p-4 md:p-6 scroll-reveal">
-                                            <h3 class="text-2xl font-bold text-white mb-2">{{ $item->title }}</h3>
-                                            <p class="text-primary-gold font-semibold mb-3">{{ $item->year }}</p>
+                                            <h3 class="text-xl font-bold text-white mb-2">{{ $item->title }}</h3>
                                             <p class="text-gray-300 text-sm sm:text-base">{{ $item->description }}</p>
                                         </div>
                                     </div>
@@ -159,7 +227,7 @@
                         deliver.
                     </p>
                 </div>
-               
+
                 @php
                     $colorMap = [
                         'Innovation' => 'from-blue-500 to-purple-600',

@@ -34,16 +34,6 @@ class CompanyTimelineResource extends Resource
                     Forms\Components\TextInput::make('title')
                         ->required()
                         ->columnSpan('full'),
-                    Select::make('year')
-                        ->label('Year')
-                        ->options(
-                            collect(range(date('Y'), date('Y') - 100))
-                                ->mapWithKeys(fn($year) => [$year => $year])
-                                ->toArray()
-                        )
-                        ->searchable()
-                        ->required()
-                        ->columnSpan('full'),
                     Forms\Components\Textarea::make('description')
                         ->required()
                         ->columnSpan('full'),
@@ -59,7 +49,6 @@ class CompanyTimelineResource extends Resource
         return $table
             ->columns([
                 Tables\Columns\TextColumn::make('title')->label('Tiele')->sortable()->searchable(),
-                Tables\Columns\TextColumn::make('year')->sortable(),
                 Tables\Columns\TextColumn::make('created_at')->dateTime('M d, Y')->sortable(),
             ])
             ->filters([

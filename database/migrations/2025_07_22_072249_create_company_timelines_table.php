@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('company_timelines', function (Blueprint $table) {
             $table->id();
             $table->string('title');
-            $table->string('year');
+            $table->string('year')->nullable();
             $table->text('description');
             $table->timestamps();
         });
