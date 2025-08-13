@@ -1,7 +1,6 @@
 <?php
 
 return [
-
     /*
     |--------------------------------------------------------------------------
     | Default Filesystem Disk
@@ -29,12 +28,12 @@ return [
     */
 
     'disks' => [
-
-         'local' => [
+        
+        'local' => [
             'driver' => 'local',
             'root' => public_path('/images/'),
             'visibility' => 'public',
-            'url' => env('APP_URL').'/images/',
+            'url' => env('APP_URL') . '/images/',
             'throw' => false,
         ],
 
@@ -58,7 +57,6 @@ return [
             'throw' => false,
             'report' => false,
         ],
-
     ],
 
     /*
@@ -75,5 +73,4 @@ return [
     'links' => [
         public_path('storage') => storage_path('app/public'),
     ],
-
 ];

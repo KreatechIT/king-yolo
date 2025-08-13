@@ -37,6 +37,7 @@
                 </div>
 
                 <a href="{{route('about')}}" class="nav-link">About</a>
+                <a href="{{route('blog')}}" class="nav-link">Blog</a>
             </div>
 
             <!-- Contact Us Button -->
@@ -84,6 +85,7 @@
         </div>
 
         <a href="{{route('about')}}" class="block py-2 text-text-light hover:text-primary-gold transition-colors">About</a>
+        <a href="{{route('blog')}}" class="block py-2 text-text-light hover:text-primary-gold transition-colors">Blog</a>
         <a href="{{route('contact')}}" class="block py-2 rounded-lg mt-4">Contact Us</a>
     </div>
 </div>
