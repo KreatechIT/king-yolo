@@ -5,6 +5,10 @@
     Discover KingAutomation | Innovators in smart automation solutions for businesses across Malaysia, delivering efficiency
     through technology and integration.
 @endpush
+
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/about" />
+@endpush
 <section>
     <div class="premium-gradient">
         <!-- Hero Section -->
@@ -29,7 +33,8 @@
 
                 <!-- Services Grid -->
                 <div class="mb-20">
-                    <h2 class="font-inter text-3xl text-center sm:text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h2 class="font-inter text-3xl text-center sm:text-4xl lg:text-5xl font-bold text-white mb-6" data-aos="fade-up"
+                        data-aos-delay="100">
                         We Provide
                     </h2>
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">

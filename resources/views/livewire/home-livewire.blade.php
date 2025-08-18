@@ -6,6 +6,10 @@
     Integrate with your BO via API.
 @endpush
 
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com" />
+@endpush
+
 <section>
     <!-- Hero Section -->
     <div class="pt-32 pb-16 flex flex-col justify-center overflow-hidden">
@@ -558,23 +562,23 @@
                 <div class="grid grid-cols-1 gap-4 mb-6">
                     <div class="bg-white/10 px-2 py-4 rounded-lg">
                         <div class="text-lg font-bold text-background-dark">KingBot</div>
-                        <div class="text-md text-background-dark/80">- a banking automation system that manages secure
+                        <div class="text-md text-background-dark/80">A banking automation system that manages secure
                             fund transfers, transaction monitoring, and real-time workflow integration</div>
                     </div>
                     <div class="bg-white/10 px-2 py-4 rounded-lg">
                         <div class="text-lg font-bold text-background-dark">KingPay</div>
-                        <div class="text-md text-background-dark/80">- a payment processing solution designed to
+                        <div class="text-md text-background-dark/80">A payment processing solution designed to
                             simplify and automate financial transactions
                         </div>
                     </div>
                     <div class="bg-white/10 px-2 py-4 rounded-lg">
                         <div class="text-lg font-bold text-background-dark">KingMedia</div>
-                        <div class="text-md text-background-dark/80">- offers SEO services and social media marketing
+                        <div class="text-md text-background-dark/80">Offers SEO services and social media marketing
                             strategies to help brands grow online</div>
                     </div>
                     <div class="bg-white/10 px-2 py-4 rounded-lg">
                         <div class="text-lg font-bold text-background-dark">KingTech</div>
-                        <div class="text-md text-background-dark/80">- focus on delivering custom, scalable, and
+                        <div class="text-md text-background-dark/80">Focus on delivering custom, scalable, and
                             responsive websites for businesses with a focus on automation, integration, and business
                             scalability, KingYolo helps companies adapt and thrive in the digital age.</div>
                     </div>

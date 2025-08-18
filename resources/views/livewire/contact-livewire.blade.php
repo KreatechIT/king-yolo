@@ -1,3 +1,14 @@
+@push('title')
+    Contact KingYolo for Banking, Marketing, & Tech Solutions
+@endpush
+
+@push('meta_description')
+    Get in touch with KingYolo for banking automation, marketing, and tech solutions. Our team is ready to help you streamline operations and grow your business.
+@endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/contact" />
+@endpush
+
 <section>
     <!-- Hero Section -->
     <div class="relative gradient-bg radial-gradient py-24 overflow-hidden">
