@@ -12,10 +12,10 @@ class BlogPreviewLivewire extends Component
 
     public function mount($slug)
     {   
-        $this->blog = Blog::where('slug', $slug)->firstOrFail();
+        $this->blog = Blog::active()->where('slug', $slug)->firstOrFail();
         // Fetch related blogs based on the same category or type
-        $this->relatedBlogs = Blog::
-            where('id', '!=', $this->blog->id)
+        $this->relatedBlogs = Blog::active()
+            ->where('id', '!=', $this->blog->id)
             ->take(3)
             ->get();
     }

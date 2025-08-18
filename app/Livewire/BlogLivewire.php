@@ -15,11 +15,11 @@ class BlogLivewire extends Component
     public function render()
     {
         // Get the latest blog post
-        $this->latestBlog = Blog::latest()->first();
+        $this->latestBlog = Blog::active()->latest()->first();
 
         return view('livewire.blog-livewire', [
             'latestBlog' => $this->latestBlog,
-            'blogs' => Blog::paginate(3),
+            'blogs' => Blog::active()->paginate(3),
         ]);
     }
 }
