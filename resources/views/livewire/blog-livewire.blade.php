@@ -5,6 +5,9 @@
     Stay ahead with the latest insights, news, and trends. Explore expert tips, strategies, and market insights to grow your
     business with KingYolo.
 @endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/blog" />
+@endpush
 
 <section>
     <div class="premium-gradient">

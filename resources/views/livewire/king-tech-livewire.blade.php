@@ -5,6 +5,9 @@
     KingTech is a website development agency that builds smart, custom websites and scalable digital solutions for
     businesses across Malaysia and Southeast Asia.
 @endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/kingtech" />
+@endpush
 
 <section>
     <!-- Hero Section -->
@@ -17,9 +20,9 @@
                         class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
                         KingTech
                     </div>
-                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h1 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
                         <span class="text-primary-gold">KingTech</span> Web Development Solutions
-                    </h2>
+                    </h1>
                     <p class="text-lg text-gray-300 mb-8">
                         Build reliable, high-performance websites tailored to your business needs. From custom
                         interfaces to scalable platforms, KingTech delivers practical web solutions that work.

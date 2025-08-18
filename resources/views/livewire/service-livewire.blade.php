@@ -1,3 +1,14 @@
+@push('title')
+    KingYolo Services | Banking Automation, Marketing & Tech Solutions
+@endpush
+@push('meta_description')
+    Unlock growth with KingYolo’s expert services in banking automation, digital marketing, and tech solutions. Streamline
+    operations with innovative strategies.
+@endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/service" />
+@endpush
+
 <section>
     <!-- KingBot div -->
     <div class="py-20 pt-32 relative">
@@ -94,7 +105,8 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Automation
                         </button>
-                        <a href="{{route('kingbot')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
+                        <a href="{{ route('kingbot') }}"
+                            class="premium-outline-btn px-8 py-3 rounded-lg font-medium">View
                             Details</a>
                     </div>
                 </div>
@@ -375,7 +387,8 @@
                         <button class="premium-btn px-8 py-3 rounded-lg font-semibold">
                             Start Campaign
                         </button>
-                        <a href="{{route('kingmedia')}}" class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
+                        <a href="{{ route('kingmedia') }}"
+                            class="premium-outline-btn px-8 py-3 rounded-lg font-medium">
                             View Details
                         </a>
                     </div>

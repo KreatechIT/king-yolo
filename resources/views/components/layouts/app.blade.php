@@ -8,8 +8,8 @@
     <!-- Meta Data -->
     <title>@stack('title')</title>
     <meta name="description" content="@stack('meta_description')">
-    <meta name="keywords" content="@stack('meta_keywords')">
 
+    @stack('canonical')
 
     <!-- Favicon -->
     <link rel="icon" href="{{ asset('assets/king-yolo.png') }}" type="image/x-icon">

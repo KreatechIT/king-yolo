@@ -4,6 +4,9 @@
 @push('meta_description')
     Looking for a trusted marketing company in Malaysia? KingMedia is your go-to agency digital marketing and agency marketing digital specialist in SEA.
 @endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/kingmedia" />
+@endpush
 
 <section>
     <!-- KingMedia div -->
@@ -43,10 +46,10 @@
                         class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
                         Digital Marketing
                     </div>
-                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h1 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
                         <span class="text-primary-gold">KingMedia</span> Marketing
                         Excellence
-                    </h2>
+                    </h1>
                     <p class="text-lg text-gray-300 mb-8">
                         KingMedia helps businesses grow online with data-driven digital marketing services. From Google SEO and SEM to social media and branded video content, we deliver measurable results tailored to your brand goals.
                     </p>

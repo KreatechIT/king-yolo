@@ -5,6 +5,10 @@
     Automate bank transfers, approvals & transaction tracking with KingBot. Secure, API-ready banking automation built for
     business efficiency. Get yours now!
 @endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/kingbot" />
+@endpush
+
 
 <section>
     <!-- Hero Section -->
@@ -17,10 +21,10 @@
                         class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
                         Banking Automation
                     </div>
-                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h1 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
                         <span class="text-primary-gold">KingBot</span> Banking Automation
                         Suite
-                    </h2>
+                    </h1>
                     <p class="text-lg text-gray-300 mb-8">
                         KingBot is a secure, API-ready system designed to automate core banking operations for
                         businesses including transaction monitoring, withdrawals, and approval flows without exposing

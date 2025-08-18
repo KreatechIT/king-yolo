@@ -1,3 +1,13 @@
+@push('title')
+   Top Digital Marketing Company in Malaysia | KingMedia
+@endpush
+@push('meta_description')
+    Looking for a trusted marketing company in Malaysia? KingMedia is your go-to agency digital marketing and agency marketing digital specialist in SEA.
+@endpush
+@push('canonical')
+    <link rel="canonical" href="https://kingyolo.com/kingpay" />
+@endpush
+
 <section>
     <!-- KingPay div -->
     <div class="py-20 pt-32 relative">
@@ -9,9 +19,9 @@
                         class="mb-4 text-primary-gold border rounded-full inline-block px-4 py-1 text-sm border-primary-gold font-semibold">
                         Payment Solutions
                     </div>
-                    <h2 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
+                    <h1 class="font-inter text-4xl lg:text-5xl font-bold text-white mb-6">
                         <span class="text-primary-gold">KingPay</span> Secure Payments
-                    </h2>
+                    </h1>
                     <p class="text-lg text-gray-300 mb-8">
                         Process payments with confidence using our enterprise-grade
                         payment infrastructure. Built for scale, designed for security,

@@ -48,6 +48,101 @@
                             li {
                                 margin-bottom: 0.5rem;
                             }
+
+                            table {
+                                border-collapse: collapse;
+                                width: 100%;
+                                margin-bottom: 1rem;
+                            }
+
+                            th,
+                            td {
+                                border: 1px solid #4B5563;
+                                /* Gray-600 for borders */
+                                padding: 0.75rem;
+                                text-align: left;
+                            }
+
+                            th {
+                                background-color: #111827;
+                                /* Gray-800 for header background */
+                                color: #ffffff;
+                                /* White text for headers */
+                                font-weight: bold;
+                            }
+
+                            td {
+                                background-color: #1F2937;
+                                /* Gray-900 for cell background */
+                                color: #D1D5DB;
+                                /* Gray-300 for cell text */
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar {
+                                background-color: #1F2937;
+                                border: none;
+                                padding: 4px 8px;
+                                border-radius: 4px;
+                                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-label,
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-item,
+                            .filament-rich-editor-component .ql-toolbar button {
+                                color: #D1D5DB;
+                                background-color: transparent;
+                                border: none;
+                                padding: 4px 6px;
+                                margin: 0 2px;
+                                border-radius: 4px;
+                                transition: background-color 0.2s;
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar button:hover,
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-label:hover,
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-item:hover {
+                                background-color: #374151;
+                                color: #F9FAFB;
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar .ql-active,
+                            .filament-rich-editor-component .ql-toolbar .ql-picker .ql-active {
+                                background-color: #4B5563;
+                                color: #F9FAFB;
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar .ql-picker {
+                                color: #D1D5DB;
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-options {
+                                background-color: #1F2937;
+                                border: 1px solid #4B5563;
+                                border-radius: 4px;
+                                box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+                            }
+
+                            .filament-rich-editor-component .ql-toolbar .ql-picker-item:hover {
+                                background-color: #374151;
+                            }
+
+                            .filament-rich-editor-component .ql-container {
+                                border: 1px solid #4B5563;
+                                border-radius: 4px;
+                                background-color: #111827;
+                                color: #D1D5DB;
+                            }
+
+                            .filament-rich-editor-component .ql-editor {
+                                min-height: 150px;
+                                padding: 12px;
+                            }
+
+                            .filament-rich-editor-component .ql-editor p,
+                            .filament-rich-editor-component .ql-editor ul,
+                            .filament-rich-editor-component .ql-editor ol {
+                                margin-bottom: 0.5rem;
+                            }
                         </style>
                     </div>
                 </div>

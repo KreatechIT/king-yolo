@@ -20,6 +20,8 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Forms\Components\Toggle;
 use Filament\Tables\Columns\ToggleColumn;
 use Filament\Forms\Components\MarkdownEditor;
+use AmidEsfahani\FilamentTinyEditor\TinyEditor;
+use Illuminate\Support\Facades\Storage;
 
 class BlogResource extends Resource
 {
@@ -52,10 +54,18 @@ class BlogResource extends Resource
                 Forms\Components\Textarea::make('meta_description')->label('Meta Description')->required()->columnSpan('full'),
                 Toggle::make('is_featured'),
                 Toggle::make('status')->default(true),
-                RichEditor::make('content')
-                 ->disableToolbarButtons([
-                    'codeBlock',
-                ])
+
+                TinyEditor::make('content')
+                    ->fileAttachmentsDisk('public')
+                    ->fileAttachmentsVisibility('public')
+                    ->fileAttachmentsDirectory('uploads')
+                    ->profile('full')
+                    ->ltr() 
+                    ->resize('both')
+                    ->columnSpan('full')
+                    ->required()
+
+              
             ])
                 ->columns(1) 
                 ->columnSpanFull(), 
