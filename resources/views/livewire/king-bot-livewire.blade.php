@@ -15,11 +15,6 @@
     <div class="py-20 pt-32 relative">
         <div class="absolute inset-0 parallax-bg"></div>
         <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-8">
-            <div class="py-10 max-w-7xl text-center" data-aos="fade-up">
-                <h1 class="font-inter text-4xl lg:text-5xl font-bold text-white">
-                    KingYolo – Banking Automation, Marketing & Technology Experts
-                </h1>
-            </div>
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="order-2" data-aos="fade-left">
                     <div
