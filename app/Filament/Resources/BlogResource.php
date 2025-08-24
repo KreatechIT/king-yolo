@@ -75,7 +75,7 @@ class BlogResource extends Resource
     public static function table(Table $table): Table
     {
         return $table
-            ->columns([TextColumn::make('title')->limit(50)->sortable()->searchable(), ToggleColumn::make('is_featured'), ToggleColumn::make('status'), TextColumn::make('uploaded_date')->dateTime('M d, Y')->sortable()])
+            ->columns([TextColumn::make('title')->limit(50)->sortable()->searchable(), ToggleColumn::make('is_featured'), ToggleColumn::make('status'), Tables\Columns\TextColumn::make('created_at')->dateTime('M d, Y')->sortable()])
             ->filters([
                 //
             ])
